@@ -1,0 +1,166 @@
+{
+  "personal": {
+    "name": "Your Name",
+    "title": "Full Stack Developer",
+    "tagline": "Building digital experiences that make a difference",
+    "bio": "I'm a passionate developer with expertise in building modern web applications. I love turning complex problems into simple, beautiful solutions.",
+    "email": "your.email@example.com",
+    "location": "San Francisco, CA",
+    "avatar": "/avatar.jpg",
+    "resumeUrl": "/resume.pdf",
+    "social": {
+      "github": "https://github.com/yourusername",
+      "linkedin": "https://linkedin.com/in/yourusername",
+      "twitter": "https://twitter.com/yourusername"
+    }
+  },
+  "experience": [
+    {
+      "id": "exp1",
+      "company": "Tech Company Inc.",
+      "role": "Senior Software Engineer",
+      "period": "2022 - Present",
+      "location": "San Francisco, CA",
+      "description": "Leading development of core platform features serving millions of users.",
+      "highlights": [
+        "Led migration of legacy system to modern React architecture",
+        "Reduced page load time by 40% through performance optimizations",
+        "Mentored team of 5 junior developers"
+      ],
+      "technologies": ["React", "TypeScript", "Node.js", "AWS"]
+    },
+    {
+      "id": "exp2",
+      "company": "Startup XYZ",
+      "role": "Full Stack Developer",
+      "period": "2020 - 2022",
+      "location": "Remote",
+      "description": "Built and scaled the company's main product from MVP to production.",
+      "highlights": [
+        "Developed real-time collaboration features using WebSockets",
+        "Implemented CI/CD pipeline reducing deployment time by 60%",
+        "Integrated third-party APIs for payment and analytics"
+      ],
+      "technologies": ["Vue.js", "Python", "PostgreSQL", "Docker"]
+    },
+    {
+      "id": "exp3",
+      "company": "Digital Agency",
+      "role": "Junior Developer",
+      "period": "2018 - 2020",
+      "location": "New York, NY",
+      "description": "Developed responsive websites and web applications for various clients.",
+      "highlights": [
+        "Built 20+ client websites using modern frameworks",
+        "Collaborated with design team to implement pixel-perfect UIs",
+        "Introduced automated testing practices to the team"
+      ],
+      "technologies": ["JavaScript", "React", "SCSS", "PHP"]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu1",
+      "institution": "University of Technology",
+      "degree": "Bachelor of Science in Computer Science",
+      "period": "2014 - 2018",
+      "location": "Boston, MA",
+      "gpa": "3.8/4.0",
+      "highlights": [
+        "Dean's List all semesters",
+        "Senior thesis on machine learning applications",
+        "President of Computer Science Club"
+      ]
+    },
+    {
+      "id": "edu2",
+      "institution": "Online Learning Platform",
+      "degree": "Full Stack Web Development Bootcamp",
+      "period": "2018",
+      "location": "Online",
+      "highlights": [
+        "Intensive 12-week program",
+        "Built 5 full-stack projects",
+        "Graduated with honors"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj1",
+      "title": "E-Commerce Platform",
+      "description": "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
+      "image": "/projects/ecommerce.jpg",
+      "technologies": ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/username/ecommerce",
+      "featured": true
+    },
+    {
+      "id": "proj2",
+      "title": "Task Management App",
+      "description": "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
+      "image": "/projects/taskapp.jpg",
+      "technologies": ["React", "Firebase", "Tailwind CSS"],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/username/taskapp",
+      "featured": true
+    },
+    {
+      "id": "proj3",
+      "title": "Weather Dashboard",
+      "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and severe weather alerts.",
+      "image": "/projects/weather.jpg",
+      "technologies": ["Vue.js", "OpenWeather API", "Chart.js"],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/username/weather",
+      "featured": false
+    },
+    {
+      "id": "proj4",
+      "title": "Portfolio Generator",
+      "description": "A CLI tool that generates beautiful portfolio websites from a simple configuration file.",
+      "image": "/projects/portfolio-gen.jpg",
+      "technologies": ["Node.js", "Handlebars", "Commander.js"],
+      "githubUrl": "https://github.com/username/portfolio-gen",
+      "featured": false
+    }
+  ],
+  "skills": {
+    "languages": ["JavaScript", "TypeScript", "Python", "Go", "SQL"],
+    "frontend": ["React", "Next.js", "Vue.js", "Tailwind CSS", "Framer Motion"],
+    "backend": ["Node.js", "Express", "FastAPI", "GraphQL", "REST APIs"],
+    "databases": ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
+    "devops": ["Docker", "AWS", "Vercel", "GitHub Actions", "CI/CD"],
+    "tools": ["Git", "VS Code", "Figma", "Postman", "Jest"]
+  },
+  "blog": [
+    {
+      "id": "blog1",
+      "title": "Building Performant React Applications",
+      "slug": "building-performant-react-apps",
+      "excerpt": "Learn the key techniques for optimizing React applications, from code splitting to memoization.",
+      "date": "2024-01-15",
+      "readTime": "8 min read",
+      "tags": ["React", "Performance", "JavaScript"]
+    },
+    {
+      "id": "blog2",
+      "title": "A Guide to Modern CSS Layouts",
+      "slug": "modern-css-layouts",
+      "excerpt": "Explore CSS Grid, Flexbox, and Container Queries for building responsive layouts.",
+      "date": "2024-01-08",
+      "readTime": "6 min read",
+      "tags": ["CSS", "Web Design", "Frontend"]
+    },
+    {
+      "id": "blog3",
+      "title": "Getting Started with TypeScript",
+      "slug": "getting-started-typescript",
+      "excerpt": "A beginner-friendly introduction to TypeScript and its benefits for JavaScript developers.",
+      "date": "2024-01-01",
+      "readTime": "10 min read",
+      "tags": ["TypeScript", "JavaScript", "Tutorial"]
+    }
+  ]
+}
