@@ -149,7 +149,7 @@ export default function Contact() {
                       setFormState({ ...formState, name: e.target.value })
                     }
                     className="w-full px-4 py-3 bg-dark-800 border border-dark-700 rounded-lg text-white placeholder-dark-500 focus:outline-none focus:border-primary-500 transition-colors"
-                    placeholder="Your name"
+                    placeholder="Gautam Nair"
                   />
                 </div>
 

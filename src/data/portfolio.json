@@ -1,17 +1,16 @@
 {
   "personal": {
-    "name": "Your Name",
+    "name": "Gautam Nair",
     "title": "Full Stack Developer",
     "tagline": "Building digital experiences that make a difference",
     "bio": "I'm a passionate developer with expertise in building modern web applications. I love turning complex problems into simple, beautiful solutions.",
     "email": "gautamnair023@gmail.com",
-    "location": "San Francisco, CA",
+    "location": "New York, NY",
     "avatar": "/avatar.jpg",
     "resumeUrl": "/resume.pdf",
     "social": {
-      "github": "https://github.com/yourusername",
+      "github": "https://github.com/youruseg23polarrname",
       "linkedin": "https://linkedin.com/in/g23",
-      "twitter": "https://twitter.com/yourusername"
     }
   },
   "experience": [
