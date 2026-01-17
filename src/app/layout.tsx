@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-dark-950 text-dark-100`}>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className={`${inter.className} bg-dark-950 text-dark-100`} suppressHydrationWarning>
         <SessionProvider>
           {children}
         </SessionProvider>
