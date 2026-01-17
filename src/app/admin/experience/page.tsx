@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
 import { Plus, Pencil, Trash2, Loader2 } from "lucide-react"
 import ExperienceForm from "@/components/admin/ExperienceForm"
 import DeleteConfirmModal from "@/components/admin/DeleteConfirmModal"
@@ -67,33 +66,24 @@ export default function ExperienceManagePage() {
           <h1 className="text-3xl font-bold text-white">Work Experience</h1>
           <p className="text-dark-400 mt-1">{experiences.length} entries</p>
         </div>
-        <motion.button
+        <button
           onClick={() => setIsAdding(true)}
           className="btn-primary flex items-center gap-2"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
         >
           <Plus size={18} />
           Add Experience
-        </motion.button>
+        </button>
       </div>
 
-      <AnimatePresence>
-        {isAdding && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="mb-6 overflow-hidden"
-          >
-            <ExperienceForm onSave={handleSave} onCancel={() => setIsAdding(false)} />
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isAdding && (
+        <div className="mb-6 overflow-hidden">
+          <ExperienceForm onSave={handleSave} onCancel={() => setIsAdding(false)} />
+        </div>
+      )}
 
       <div className="space-y-4">
         {experiences.map((exp) => (
-          <motion.div key={exp.id} layout className="glass-card p-6">
+          <div key={exp.id} className="glass-card p-6">
             {editingId === exp.id ? (
               <ExperienceForm
                 experience={exp}
@@ -140,7 +130,7 @@ export default function ExperienceManagePage() {
                 </div>
               </div>
             )}
-          </motion.div>
+          </div>
         ))}
       </div>
 

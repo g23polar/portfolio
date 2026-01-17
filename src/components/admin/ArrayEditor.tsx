@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Plus, X } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
 
 interface ArrayEditorProps {
   label: string
@@ -42,26 +41,21 @@ export default function ArrayEditor({
       <label className="block text-sm font-medium text-dark-300 mb-2">{label}</label>
 
       <div className="flex flex-wrap gap-2 mb-3 min-h-[32px]">
-        <AnimatePresence>
-          {items.map((item, index) => (
-            <motion.span
-              key={`${item}-${index}`}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              className="flex items-center gap-1 px-3 py-1 bg-primary-500/10 text-primary-400 rounded-full text-sm"
+        {items.map((item, index) => (
+          <span
+            key={`${item}-${index}`}
+            className="flex items-center gap-1 px-3 py-1 bg-primary-500/10 text-primary-400 rounded-full text-sm"
+          >
+            {item}
+            <button
+              type="button"
+              onClick={() => removeItem(index)}
+              className="hover:text-red-400 transition-colors ml-1"
             >
-              {item}
-              <button
-                type="button"
-                onClick={() => removeItem(index)}
-                className="hover:text-red-400 transition-colors ml-1"
-              >
-                <X size={14} />
-              </button>
-            </motion.span>
-          ))}
-        </AnimatePresence>
+              <X size={14} />
+            </button>
+          </span>
+        ))}
       </div>
 
       <div className="flex gap-2">

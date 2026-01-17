@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
 import portfolioData from '@/data/portfolio.json'
 
@@ -11,29 +10,18 @@ export default function Blog() {
     <section id="blog" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="section-heading">Latest Articles</h2>
           <p className="section-subheading mx-auto">
             Thoughts, tutorials, and insights about web development
           </p>
-        </motion.div>
+        </div>
 
         {/* Blog Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blog.map((post, index) => (
-            <motion.article
+          {blog.map((post) => (
+            <article
               key={post.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -8 }}
               className="glass-card overflow-hidden group hover:border-primary-500/50 transition-all duration-300"
             >
               {/* Thumbnail placeholder */}
@@ -87,34 +75,24 @@ export default function Blog() {
                       {post.readTime}
                     </span>
                   </div>
-                  <motion.span
-                    className="flex items-center gap-1 text-primary-400 opacity-0 group-hover:opacity-100 transition-opacity"
-                    initial={{ x: -10 }}
-                    whileHover={{ x: 0 }}
-                  >
+                  <span className="flex items-center gap-1 text-primary-400 opacity-0 group-hover:opacity-100 transition-opacity">
                     Read <ArrowRight size={12} />
-                  </motion.span>
+                  </span>
                 </div>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
 
         {/* View all link */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <motion.a
+        <div className="text-center mt-12">
+          <a
             href="/blog"
             className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-medium transition-colors"
-            whileHover={{ x: 5 }}
           >
             View all articles <ArrowRight size={18} />
-          </motion.a>
-        </motion.div>
+          </a>
+        </div>
       </div>
     </section>
   )

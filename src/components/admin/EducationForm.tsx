@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 import { Save, X, Loader2 } from "lucide-react"
 import FormField from "./FormField"
 import ArrayEditor from "./ArrayEditor"
@@ -102,16 +101,14 @@ export default function EducationForm({ education, onSave, onCancel }: Education
         >
           Cancel
         </button>
-        <motion.button
+        <button
           type="submit"
           disabled={saving}
           className="btn-primary flex items-center gap-2"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
         >
           {saving ? <Loader2 className="animate-spin" size={18} /> : <Save size={18} />}
           {education ? "Update" : "Create"}
-        </motion.button>
+        </button>
       </div>
     </form>
   )
