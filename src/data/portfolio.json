@@ -2,15 +2,15 @@
   "personal": {
     "name": "Gautam Nair",
     "title": "Full Stack Developer",
-    "tagline": "Building digital experiences that make a difference",
-    "bio": "I'm a passionate developer with expertise in building modern web applications. I love turning complex problems into simple, beautiful solutions.",
+    "tagline": "Brb, climbing a tree probably ... ",
+    "bio": "Avid tree climber",
     "email": "gautamnair023@gmail.com",
     "location": "New York, NY",
     "avatar": "/avatar.jpg",
     "resumeUrl": "/resume.pdf",
     "social": {
-      "github": "https://github.com/youruseg23polarrname",
-      "linkedin": "https://linkedin.com/in/g23",
+      "github": "https://github.com/g23polar",
+      "linkedin": "https://linkedin.com/in/g23"
     }
   },
   "experience": [
