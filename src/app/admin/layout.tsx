@@ -1,7 +1,6 @@
 import { auth } from "@/auth"
 import { redirect } from "next/navigation"
-import AdminSidebar from "@/components/admin/AdminSidebar"
-import AdminHeader from "@/components/admin/AdminHeader"
+import AdminShell from "@/components/admin/AdminShell"
 import SessionProvider from "@/components/providers/SessionProvider"
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -13,11 +12,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   return (
     <SessionProvider>
-      <div className="min-h-screen bg-dark-950">
-        <AdminSidebar />
-        <AdminHeader user={session.user} />
-        <main className="ml-64 pt-16 p-8">{children}</main>
-      </div>
+      <AdminShell user={session.user}>{children}</AdminShell>
     </SessionProvider>
   )
 }
