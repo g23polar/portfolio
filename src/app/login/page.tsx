@@ -14,7 +14,9 @@ function LoginContent() {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary-900/20 via-dark-950 to-dark-950" />
 
-      <div className="relative z-10 glass-card p-8 w-full max-w-md mx-4">
+      <div
+        className="relative z-10 glass-card p-8 w-full max-w-md mx-4"
+      >
         <h1 className="text-2xl font-bold text-white text-center mb-2">Admin Login</h1>
         <p className="text-dark-400 text-center mb-8">Sign in to access the admin dashboard</p>
 
@@ -31,7 +33,7 @@ function LoginContent() {
         <div className="space-y-4">
           <button
             onClick={() => signIn("google", { callbackUrl })}
-            className="w-full flex items-center justify-center gap-3 px-6 py-3 bg-white hover:bg-gray-100 text-gray-800 rounded-lg font-medium transition-colors"
+            className="w-full flex items-center justify-center gap-3 px-6 py-3 bg-white hover:bg-gray-100 text-gray-800 rounded-lg font-medium transition-colors hover:scale-[1.02] active:scale-[0.98]"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24">
               <path
@@ -56,7 +58,7 @@ function LoginContent() {
 
           <button
             onClick={() => signIn("github", { callbackUrl })}
-            className="w-full flex items-center justify-center gap-3 px-6 py-3 bg-dark-800 hover:bg-dark-700 text-white rounded-lg font-medium transition-colors border border-dark-700"
+            className="w-full flex items-center justify-center gap-3 px-6 py-3 bg-dark-800 hover:bg-dark-700 text-white rounded-lg font-medium transition-colors border border-dark-700 hover:scale-[1.02] active:scale-[0.98]"
           >
             <Github size={20} />
             Continue with GitHub

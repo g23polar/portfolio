@@ -28,7 +28,7 @@ export default function AdminHeader({ user }: AdminHeaderProps) {
 
         <button
           onClick={() => signOut({ callbackUrl: "/" })}
-          className="flex items-center gap-2 px-4 py-2 text-dark-400 hover:text-white hover:bg-dark-800 rounded-lg transition-colors"
+          className="flex items-center gap-2 px-4 py-2 text-dark-400 hover:text-white hover:bg-dark-800 rounded-lg transition-colors hover:scale-[1.02] active:scale-[0.98]"
         >
           <LogOut size={18} />
           <span className="text-sm">Sign out</span>

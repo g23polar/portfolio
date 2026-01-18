@@ -68,7 +68,7 @@ export default function ExperienceManagePage() {
         </div>
         <button
           onClick={() => setIsAdding(true)}
-          className="btn-primary flex items-center gap-2"
+          className="btn-primary flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-transform"
         >
           <Plus size={18} />
           Add Experience
@@ -76,7 +76,7 @@ export default function ExperienceManagePage() {
       </div>
 
       {isAdding && (
-        <div className="mb-6 overflow-hidden">
+        <div className="mb-6">
           <ExperienceForm onSave={handleSave} onCancel={() => setIsAdding(false)} />
         </div>
       )}

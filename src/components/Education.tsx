@@ -10,7 +10,9 @@ export default function Education() {
     <section id="education" className="py-20 bg-dark-900/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+        >
           <h2 className="section-heading">Education</h2>
           <p className="section-subheading mx-auto">
             My academic background and continuous learning journey
@@ -22,7 +24,7 @@ export default function Education() {
           {education.map((edu) => (
             <div
               key={edu.id}
-              className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300"
+              className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-2"
             >
               {/* Icon */}
               <div className="w-12 h-12 bg-primary-500/10 rounded-xl flex items-center justify-center mb-4">

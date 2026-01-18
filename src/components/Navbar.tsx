@@ -35,7 +35,10 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="text-xl font-bold gradient-text">
+          <a
+            href="#"
+            className="text-xl font-bold gradient-text hover:scale-105 active:scale-95 transition-transform"
+          >
             Portfolio
           </a>
 
@@ -45,12 +48,15 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-dark-400 hover:text-white transition-colors duration-200 text-sm font-medium"
+                className="text-dark-400 hover:text-white transition-colors duration-200 text-sm font-medium hover:-translate-y-0.5 active:scale-95"
               >
                 {link.name}
               </a>
             ))}
-            <a href="/resume.pdf" className="btn-primary text-sm py-2">
+            <a
+              href="/resume.pdf"
+              className="btn-primary text-sm py-2 hover:scale-105 active:scale-95 transition-transform"
+            >
               Resume
             </a>
           </div>
@@ -67,25 +73,27 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-dark-900/95 backdrop-blur-lg border-b border-dark-800">
-            <div className="px-4 py-4 space-y-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="block text-dark-400 hover:text-white transition-colors duration-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ))}
+        <div
+          className="md:hidden bg-dark-900/95 backdrop-blur-lg border-b border-dark-800"
+        >
+          <div className="px-4 py-4 space-y-4">
+            {navLinks.map((link) => (
               <a
-                href="/resume.pdf"
-                className="block btn-primary text-center text-sm py-2"
+                key={link.name}
+                href={link.href}
+                className="block text-dark-400 hover:text-white transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                Resume
+                {link.name}
               </a>
-            </div>
+            ))}
+            <a
+              href="/resume.pdf"
+              className="block btn-primary text-center text-sm py-2"
+            >
+              Resume
+            </a>
+          </div>
         </div>
       )}
     </nav>

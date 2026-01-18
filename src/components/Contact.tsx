@@ -39,7 +39,9 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-dark-900/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+        >
           <h2 className="section-heading">Get In Touch</h2>
           <p className="section-subheading mx-auto">
             Have a project in mind or just want to say hi? I&apos;d love to hear
@@ -99,7 +101,7 @@ export default function Contact() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 glass-card flex items-center justify-center text-dark-400 hover:text-primary-400 hover:border-primary-500/50 transition-all duration-300"
+                      className="w-12 h-12 glass-card flex items-center justify-center text-dark-400 hover:text-primary-400 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1 active:scale-95"
                     >
                       <Icon size={20} />
                     </a>
@@ -183,7 +185,7 @@ export default function Contact() {
                   className={`w-full py-3 px-6 rounded-lg font-medium flex items-center justify-center gap-2 transition-all duration-300 ${
                     submitted
                       ? 'bg-green-500 text-white'
-                      : 'bg-primary-600 hover:bg-primary-500 text-white'
+                      : 'bg-primary-600 hover:bg-primary-500 text-white hover:scale-[1.02] active:scale-[0.98]'
                   }`}
                 >
                   {isSubmitting ? (

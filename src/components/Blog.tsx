@@ -10,7 +10,9 @@ export default function Blog() {
     <section id="blog" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+        >
           <h2 className="section-heading">Latest Articles</h2>
           <p className="section-subheading mx-auto">
             Thoughts, tutorials, and insights about web development
@@ -22,7 +24,7 @@ export default function Blog() {
           {blog.map((post) => (
             <article
               key={post.id}
-              className="glass-card overflow-hidden group hover:border-primary-500/50 transition-all duration-300"
+              className="glass-card overflow-hidden group hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-2"
             >
               {/* Thumbnail placeholder */}
               <div className="aspect-video bg-gradient-to-br from-primary-500/20 to-primary-700/10 relative overflow-hidden">
@@ -75,7 +77,9 @@ export default function Blog() {
                       {post.readTime}
                     </span>
                   </div>
-                  <span className="flex items-center gap-1 text-primary-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span
+                    className="flex items-center gap-1 text-primary-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
                     Read <ArrowRight size={12} />
                   </span>
                 </div>
@@ -85,10 +89,12 @@ export default function Blog() {
         </div>
 
         {/* View all link */}
-        <div className="text-center mt-12">
+        <div
+          className="text-center mt-12"
+        >
           <a
             href="/blog"
-            className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-medium transition-colors"
+            className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-medium transition-colors hover:translate-x-1"
           >
             View all articles <ArrowRight size={18} />
           </a>

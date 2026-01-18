@@ -12,7 +12,9 @@ export default function Projects() {
     <section id="projects" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+        >
           <h2 className="section-heading">Featured Projects</h2>
           <p className="section-subheading mx-auto">
             A selection of projects I&apos;ve built and contributed to
@@ -29,7 +31,9 @@ export default function Projects() {
               }`}
             >
               {/* Project Image */}
-              <div className="lg:w-1/2 w-full">
+              <div
+                className="lg:w-1/2 w-full hover:scale-[1.02] transition-transform duration-300"
+              >
                 <div className="aspect-video bg-gradient-to-br from-primary-500/20 to-primary-700/20 rounded-2xl overflow-hidden border border-dark-800 flex items-center justify-center">
                   <Folder size={64} className="text-primary-500/50" />
                 </div>
@@ -62,7 +66,7 @@ export default function Projects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-dark-400 hover:text-primary-400 transition-colors"
+                      className="text-dark-400 hover:text-primary-400 transition-colors hover:-translate-y-0.5"
                     >
                       <Github size={22} />
                     </a>
@@ -72,7 +76,7 @@ export default function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-dark-400 hover:text-primary-400 transition-colors"
+                      className="text-dark-400 hover:text-primary-400 transition-colors hover:-translate-y-0.5"
                     >
                       <ExternalLink size={22} />
                     </a>
@@ -86,14 +90,16 @@ export default function Projects() {
         {/* Other Projects */}
         {otherProjects.length > 0 && (
           <>
-            <h3 className="text-2xl font-bold text-white text-center mb-12">
+            <h3
+              className="text-2xl font-bold text-white text-center mb-12"
+            >
               Other Noteworthy Projects
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {otherProjects.map((project) => (
                 <div
                   key={project.id}
-                  className="glass-card p-6 flex flex-col h-full hover:border-primary-500/50 transition-all duration-300"
+                  className="glass-card p-6 flex flex-col h-full hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-2"
                 >
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">

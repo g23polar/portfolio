@@ -117,7 +117,7 @@ export default function ExperienceForm({ experience, onSave, onCancel }: Experie
         <button
           type="submit"
           disabled={saving}
-          className="btn-primary flex items-center gap-2"
+          className="btn-primary flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-transform"
         >
           {saving ? <Loader2 className="animate-spin" size={18} /> : <Save size={18} />}
           {experience ? "Update" : "Create"}

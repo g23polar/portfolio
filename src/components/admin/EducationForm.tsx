@@ -104,7 +104,7 @@ export default function EducationForm({ education, onSave, onCancel }: Education
         <button
           type="submit"
           disabled={saving}
-          className="btn-primary flex items-center gap-2"
+          className="btn-primary flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-transform"
         >
           {saving ? <Loader2 className="animate-spin" size={18} /> : <Save size={18} />}
           {education ? "Update" : "Create"}

@@ -10,7 +10,9 @@ export default function Experience() {
     <section id="experience" className="py-20 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+        >
           <h2 className="section-heading">Work Experience</h2>
           <p className="section-subheading mx-auto">
             My professional journey and the amazing teams I&apos;ve worked with
@@ -38,7 +40,9 @@ export default function Experience() {
                   index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
                 }`}
               >
-                <div className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300">
+                <div
+                  className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1"
+                >
                   {/* Header */}
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                     <div>

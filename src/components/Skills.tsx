@@ -26,7 +26,9 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-dark-900/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+        >
           <h2 className="section-heading">Skills & Technologies</h2>
           <p className="section-subheading mx-auto">
             The tools and technologies I use to bring ideas to life
@@ -34,7 +36,9 @@ export default function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {skillCategories.map(({ key, label, icon: Icon }) => {
             const categorySkills = skills[key as keyof typeof skills]
             if (!categorySkills || categorySkills.length === 0) return null
@@ -42,7 +46,7 @@ export default function Skills() {
             return (
               <div
                 key={key}
-                className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300"
+                className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1"
               >
                 {/* Category Header */}
                 <div className="flex items-center gap-3 mb-4">
@@ -57,7 +61,7 @@ export default function Skills() {
                   {categorySkills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1.5 text-sm bg-dark-800 text-dark-300 rounded-lg hover:bg-primary-500/10 hover:text-primary-400 transition-all duration-200 cursor-default"
+                      className="px-3 py-1.5 text-sm bg-dark-800 text-dark-300 rounded-lg hover:bg-primary-500/10 hover:text-primary-400 transition-all duration-200 cursor-default hover:scale-105"
                     >
                       {skill}
                     </span>

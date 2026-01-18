@@ -42,7 +42,7 @@ export default function AdminSidebar() {
           return (
             <Link key={item.href} href={item.href}>
               <div
-                className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+                className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 hover:translate-x-1 ${
                   isActive
                     ? "bg-primary-500/10 text-primary-400 border border-primary-500/30"
                     : "text-dark-400 hover:text-white hover:bg-dark-800"
@@ -58,7 +58,9 @@ export default function AdminSidebar() {
 
       <div className="absolute bottom-4 left-4 right-4">
         <Link href="/">
-          <div className="flex items-center gap-3 px-4 py-3 rounded-lg text-dark-400 hover:text-white hover:bg-dark-800 transition-colors">
+          <div
+            className="flex items-center gap-3 px-4 py-3 rounded-lg text-dark-400 hover:text-white hover:bg-dark-800 transition-all duration-200 hover:translate-x-1"
+          >
             <ArrowLeft size={18} />
             <span className="font-medium">Back to Site</span>
           </div>

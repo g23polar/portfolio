@@ -35,7 +35,7 @@ export default function Footer() {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 text-dark-400 hover:text-primary-400 transition-colors duration-200"
+                  className="p-2 text-dark-400 hover:text-primary-400 transition-colors duration-200 hover:scale-110 hover:-translate-y-0.5 active:scale-90"
                 >
                   <Icon size={20} />
                 </a>
