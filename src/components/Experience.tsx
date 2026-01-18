@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Briefcase, MapPin, Calendar } from 'lucide-react'
 import portfolioData from '@/data/portfolio.json'
 
@@ -11,18 +10,14 @@ export default function Experience() {
     <section id="experience" className="py-20 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+        <div
           className="text-center mb-16"
         >
           <h2 className="section-heading">Work Experience</h2>
           <p className="section-subheading mx-auto">
             My professional journey and the amazing teams I&apos;ve worked with
           </p>
-        </motion.div>
+        </div>
 
         {/* Timeline */}
         <div className="relative">
@@ -30,12 +25,8 @@ export default function Experience() {
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-dark-800 transform md:-translate-x-1/2" />
 
           {experience.map((job, index) => (
-            <motion.div
+            <div
               key={job.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
               className={`relative flex flex-col md:flex-row gap-8 mb-12 ${
                 index % 2 === 0 ? 'md:flex-row-reverse' : ''
               }`}
@@ -49,9 +40,8 @@ export default function Experience() {
                   index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
                 }`}
               >
-                <motion.div
-                  className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300"
-                  whileHover={{ y: -4 }}
+                <div
+                  className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1"
                 >
                   {/* Header */}
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
@@ -103,12 +93,12 @@ export default function Experience() {
                       </span>
                     ))}
                   </div>
-                </motion.div>
+                </div>
               </div>
 
               {/* Spacer for alternating layout */}
               <div className="hidden md:block md:w-1/2" />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

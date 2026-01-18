@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
 import { Plus, Pencil, Trash2, Loader2, Calendar, Clock } from "lucide-react"
 import BlogForm from "@/components/admin/BlogForm"
 import DeleteConfirmModal from "@/components/admin/DeleteConfirmModal"
@@ -75,33 +74,24 @@ export default function BlogManagePage() {
           <h1 className="text-3xl font-bold text-white">Blog Posts</h1>
           <p className="text-dark-400 mt-1">{posts.length} posts</p>
         </div>
-        <motion.button
+        <button
           onClick={() => setIsAdding(true)}
-          className="btn-primary flex items-center gap-2"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
+          className="btn-primary flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-transform"
         >
           <Plus size={18} />
           Add Post
-        </motion.button>
+        </button>
       </div>
 
-      <AnimatePresence>
-        {isAdding && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="mb-6 overflow-hidden"
-          >
-            <BlogForm onSave={handleSave} onCancel={() => setIsAdding(false)} />
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isAdding && (
+        <div className="mb-6">
+          <BlogForm onSave={handleSave} onCancel={() => setIsAdding(false)} />
+        </div>
+      )}
 
       <div className="space-y-4">
         {posts.map((post) => (
-          <motion.div key={post.id} layout className="glass-card p-6">
+          <div key={post.id} className="glass-card p-6">
             {editingId === post.id ? (
               <BlogForm post={post} onSave={handleSave} onCancel={() => setEditingId(null)} />
             ) : (
@@ -150,7 +140,7 @@ export default function BlogManagePage() {
                 </div>
               </div>
             )}
-          </motion.div>
+          </div>
         ))}
       </div>
 

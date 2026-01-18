@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
 import { Save, Loader2 } from "lucide-react"
 import FormField from "@/components/admin/FormField"
 import FormTextarea from "@/components/admin/FormTextarea"
@@ -132,16 +131,14 @@ export default function PersonalEditPage() {
         </div>
 
         <div className="flex items-center gap-4 mt-8">
-          <motion.button
+          <button
             type="submit"
             disabled={saving}
-            className="btn-primary flex items-center gap-2"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            className="btn-primary flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-transform"
           >
             {saving ? <Loader2 className="animate-spin" size={18} /> : <Save size={18} />}
             Save Changes
-          </motion.button>
+          </button>
 
           {message && (
             <span

@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
 import { Plus, Pencil, Trash2, Loader2, Star, ExternalLink, Github } from "lucide-react"
 import ProjectForm from "@/components/admin/ProjectForm"
 import DeleteConfirmModal from "@/components/admin/DeleteConfirmModal"
@@ -69,33 +68,24 @@ export default function ProjectsManagePage() {
             {projects.length} projects ({projects.filter((p) => p.featured).length} featured)
           </p>
         </div>
-        <motion.button
+        <button
           onClick={() => setIsAdding(true)}
-          className="btn-primary flex items-center gap-2"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
+          className="btn-primary flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-transform"
         >
           <Plus size={18} />
           Add Project
-        </motion.button>
+        </button>
       </div>
 
-      <AnimatePresence>
-        {isAdding && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="mb-6 overflow-hidden"
-          >
-            <ProjectForm onSave={handleSave} onCancel={() => setIsAdding(false)} />
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isAdding && (
+        <div className="mb-6">
+          <ProjectForm onSave={handleSave} onCancel={() => setIsAdding(false)} />
+        </div>
+      )}
 
       <div className="space-y-4">
         {projects.map((project) => (
-          <motion.div key={project.id} layout className="glass-card p-6">
+          <div key={project.id} className="glass-card p-6">
             {editingId === project.id ? (
               <ProjectForm
                 project={project}
@@ -166,7 +156,7 @@ export default function ProjectsManagePage() {
                 </div>
               </div>
             )}
-          </motion.div>
+          </div>
         ))}
       </div>
 

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import { Send, Mail, MapPin, Github, Linkedin, Twitter } from 'lucide-react'
 import portfolioData from '@/data/portfolio.json'
 
@@ -40,11 +39,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-dark-900/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+        <div
           className="text-center mb-16"
         >
           <h2 className="section-heading">Get In Touch</h2>
@@ -52,16 +47,11 @@ export default function Contact() {
             Have a project in mind or just want to say hi? I&apos;d love to hear
             from you!
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <h3 className="text-2xl font-bold text-white mb-6">
               Let&apos;s work together
             </h3>
@@ -106,30 +96,23 @@ export default function Contact() {
                 {Object.entries(personal.social).map(([platform, url]) => {
                   const Icon = socialIcons[platform as keyof typeof socialIcons]
                   return Icon ? (
-                    <motion.a
+                    <a
                       key={platform}
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 glass-card flex items-center justify-center text-dark-400 hover:text-primary-400 hover:border-primary-500/50 transition-all duration-300"
-                      whileHover={{ y: -4 }}
-                      whileTap={{ scale: 0.95 }}
+                      className="w-12 h-12 glass-card flex items-center justify-center text-dark-400 hover:text-primary-400 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1 active:scale-95"
                     >
                       <Icon size={20} />
-                    </motion.a>
+                    </a>
                   ) : null
                 })}
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <form onSubmit={handleSubmit} className="glass-card p-8">
               <div className="space-y-6">
                 {/* Name */}
@@ -196,16 +179,14 @@ export default function Contact() {
                 </div>
 
                 {/* Submit Button */}
-                <motion.button
+                <button
                   type="submit"
                   disabled={isSubmitting || submitted}
                   className={`w-full py-3 px-6 rounded-lg font-medium flex items-center justify-center gap-2 transition-all duration-300 ${
                     submitted
                       ? 'bg-green-500 text-white'
-                      : 'bg-primary-600 hover:bg-primary-500 text-white'
+                      : 'bg-primary-600 hover:bg-primary-500 text-white hover:scale-[1.02] active:scale-[0.98]'
                   }`}
-                  whileHover={{ scale: submitted ? 1 : 1.02 }}
-                  whileTap={{ scale: submitted ? 1 : 0.98 }}
                 >
                   {isSubmitting ? (
                     <span className="animate-pulse">Sending...</span>
@@ -219,10 +200,10 @@ export default function Contact() {
                       <span>Send Message</span>
                     </>
                   )}
-                </motion.button>
+                </button>
               </div>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Github, Linkedin, Twitter, Heart } from 'lucide-react'
 import portfolioData from '@/data/portfolio.json'
 
@@ -31,17 +30,15 @@ export default function Footer() {
             {Object.entries(personal.social).map(([platform, url]) => {
               const Icon = socialIcons[platform as keyof typeof socialIcons]
               return Icon ? (
-                <motion.a
+                <a
                   key={platform}
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 text-dark-400 hover:text-primary-400 transition-colors duration-200"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.9 }}
+                  className="p-2 text-dark-400 hover:text-primary-400 transition-colors duration-200 hover:scale-110 hover:-translate-y-0.5 active:scale-90"
                 >
                   <Icon size={20} />
-                </motion.a>
+                </a>
               ) : null
             })}
           </div>

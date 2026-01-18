@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { ExternalLink, Github, Folder } from 'lucide-react'
 import portfolioData from '@/data/portfolio.json'
 
@@ -13,42 +12,32 @@ export default function Projects() {
     <section id="projects" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+        <div
           className="text-center mb-16"
         >
           <h2 className="section-heading">Featured Projects</h2>
           <p className="section-subheading mx-auto">
             A selection of projects I&apos;ve built and contributed to
           </p>
-        </motion.div>
+        </div>
 
         {/* Featured Projects */}
         <div className="space-y-20 mb-20">
           {featuredProjects.map((project, index) => (
-            <motion.div
+            <div
               key={project.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
               className={`flex flex-col lg:flex-row gap-8 items-center ${
                 index % 2 === 1 ? 'lg:flex-row-reverse' : ''
               }`}
             >
               {/* Project Image */}
-              <motion.div
-                className="lg:w-1/2 w-full"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
+              <div
+                className="lg:w-1/2 w-full hover:scale-[1.02] transition-transform duration-300"
               >
                 <div className="aspect-video bg-gradient-to-br from-primary-500/20 to-primary-700/20 rounded-2xl overflow-hidden border border-dark-800 flex items-center justify-center">
                   <Folder size={64} className="text-primary-500/50" />
                 </div>
-              </motion.div>
+              </div>
 
               {/* Project Info */}
               <div className="lg:w-1/2 w-full">
@@ -73,54 +62,44 @@ export default function Projects() {
                 </div>
                 <div className="flex items-center gap-4">
                   {project.githubUrl && (
-                    <motion.a
+                    <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-dark-400 hover:text-primary-400 transition-colors"
-                      whileHover={{ y: -2 }}
+                      className="text-dark-400 hover:text-primary-400 transition-colors hover:-translate-y-0.5"
                     >
                       <Github size={22} />
-                    </motion.a>
+                    </a>
                   )}
                   {project.liveUrl && (
-                    <motion.a
+                    <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-dark-400 hover:text-primary-400 transition-colors"
-                      whileHover={{ y: -2 }}
+                      className="text-dark-400 hover:text-primary-400 transition-colors hover:-translate-y-0.5"
                     >
                       <ExternalLink size={22} />
-                    </motion.a>
+                    </a>
                   )}
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Other Projects */}
         {otherProjects.length > 0 && (
           <>
-            <motion.h3
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
+            <h3
               className="text-2xl font-bold text-white text-center mb-12"
             >
               Other Noteworthy Projects
-            </motion.h3>
+            </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {otherProjects.map((project, index) => (
-                <motion.div
+              {otherProjects.map((project) => (
+                <div
                   key={project.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -8 }}
-                  className="glass-card p-6 flex flex-col h-full hover:border-primary-500/50 transition-all duration-300"
+                  className="glass-card p-6 flex flex-col h-full hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-2"
                 >
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
@@ -168,7 +147,7 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </>

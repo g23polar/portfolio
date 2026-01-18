@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
 import { Save, Loader2 } from "lucide-react"
 import SkillsEditor from "@/components/admin/SkillsEditor"
 import type { Skills } from "@/types/portfolio"
@@ -69,16 +68,14 @@ export default function SkillsManagePage() {
               {message}
             </span>
           )}
-          <motion.button
+          <button
             onClick={handleSave}
             disabled={saving}
-            className="btn-primary flex items-center gap-2"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            className="btn-primary flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-transform"
           >
             {saving ? <Loader2 className="animate-spin" size={18} /> : <Save size={18} />}
             Save Changes
-          </motion.button>
+          </button>
         </div>
       </div>
 

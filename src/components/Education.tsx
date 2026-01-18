@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { GraduationCap, MapPin, Calendar, Award } from 'lucide-react'
 import portfolioData from '@/data/portfolio.json'
 
@@ -11,30 +10,21 @@ export default function Education() {
     <section id="education" className="py-20 bg-dark-900/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+        <div
           className="text-center mb-16"
         >
           <h2 className="section-heading">Education</h2>
           <p className="section-subheading mx-auto">
             My academic background and continuous learning journey
           </p>
-        </motion.div>
+        </div>
 
         {/* Education Cards */}
         <div className="grid md:grid-cols-2 gap-8">
-          {education.map((edu, index) => (
-            <motion.div
+          {education.map((edu) => (
+            <div
               key={edu.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300"
+              className="glass-card p-6 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-2"
             >
               {/* Icon */}
               <div className="w-12 h-12 bg-primary-500/10 rounded-xl flex items-center justify-center mb-4">
@@ -83,7 +73,7 @@ export default function Education() {
                   ))}
                 </ul>
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
