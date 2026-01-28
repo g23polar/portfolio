@@ -6,7 +6,7 @@ import { MapPin, Briefcase, Calendar } from 'lucide-react';
 function Experience() {
   const { theme } = useContext(ThemeContext);
 
-  const experience = {
+  const experiences = [{
     title: 'Software Engineer',
     company: 'MarketAxess',
     period: 'Sep 2022 - Nov 2025',
@@ -21,7 +21,25 @@ function Experience() {
 'Ran point for a total of 8 major environment releases/disaster recovery scenarios.', 
 'Worked closely with industry experts and product/project managers to build and maintain CI/CD pipelines.',
 'Participated in mentorship program to guide 2 interns navigate complex projects and complete assignments.'],
-  };
+  }, 
+  {
+    title:'Software Engineer', company:'Sentinel One', period:'Jun 2020 - Jan 2021', location:'Remote', type:'Intern/Contract',
+    description:[
+      'Built a back-end PowerShell library to automate forensic reporting and aid endpoint clients to perform 27 administrative and security tasks including running YARA scans, manipulating file systems, and performing WMI queries.', 
+      'Enabled remote endpoints to store system reports, logs, and more to AWS (S3 and Glacier).']
+  }, 
+  {
+    title:'', 
+    company:'',
+    period:'', 
+    location:'' ,
+    type:'', 
+    description:[
+      '',
+      ''
+    ]
+  }
+]
 
   return (
     <section
@@ -86,125 +104,128 @@ function Experience() {
             }`}
           />
 
-          {/* Experience Item */}
-          <motion.article
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="relative pl-12 md:pl-32 pb-12"
-          >
-            {/* Timeline Dot */}
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
+          {/* Experience Items */}
+          {experiences.filter(exp => exp.title).map((experience, i) => (
+            <motion.article
+              key={i}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ type: "spring", stiffness: 200, delay: 0.6 }}
-              className={`absolute left-0 md:left-12 top-2 -translate-x-1/2 w-5 h-5 rounded-full border-4 ${
-                theme === 'dark'
-                  ? 'bg-[#b8f2e6] border-[#1c1c1c]'
-                  : 'bg-[#aed9e0] border-[#fafafa]'
-              }`}
+              transition={{ duration: 0.7, delay: 0.5 + i * 0.3 }}
+              className="relative pl-12 md:pl-32 pb-12"
             >
+              {/* Timeline Dot */}
               <motion.div
-                animate={{ scale: [1, 2, 1], opacity: [0.5, 0, 0.5] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className={`absolute inset-0 rounded-full ${
-                  theme === 'dark' ? 'bg-[#b8f2e6]' : 'bg-[#aed9e0]'
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ type: "spring", stiffness: 200, delay: 0.6 + i * 0.3 }}
+                className={`absolute left-0 md:left-12 top-2 -translate-x-1/2 w-5 h-5 rounded-full border-4 ${
+                  theme === 'dark'
+                    ? 'bg-[#b8f2e6] border-[#1c1c1c]'
+                    : 'bg-[#aed9e0] border-[#fafafa]'
                 }`}
-              />
-            </motion.div>
-
-            {/* Content */}
-            <div>
-              {/* Header */}
-              <div className="mb-6">
-                <motion.h3
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.7 }}
-                  className={`text-3xl md:text-4xl font-bold mb-2 ${
-                    theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
-                  }`}
-                >
-                  {experience.title}
-                </motion.h3>
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.8 }}
-                  className={`text-xl md:text-2xl font-semibold mb-4 ${
-                    theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
-                  }`}
-                >
-                  {experience.company}
-                </motion.p>
-
-                {/* Meta Info */}
+              >
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.9 }}
-                  className="flex flex-wrap gap-4"
-                >
-                  <div className={`flex items-center gap-2 text-sm md:text-base ${
-                    theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
-                  }`}>
-                    <Calendar size={16} className={theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#aed9e0]'} />
-                    <span>{experience.period}</span>
-                  </div>
-                  <div className={`flex items-center gap-2 text-sm md:text-base ${
-                    theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
-                  }`}>
-                    <MapPin size={16} className={theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#aed9e0]'} />
-                    <span>{experience.location}</span>
-                  </div>
-                  <div className={`flex items-center gap-2 text-sm md:text-base ${
-                    theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
-                  }`}>
-                    <Briefcase size={16} className={theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#aed9e0]'} />
-                    <span>{experience.type}</span>
-                  </div>
-                </motion.div>
-              </div>
+                  animate={{ scale: [1, 2, 1], opacity: [0.5, 0, 0.5] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  className={`absolute inset-0 rounded-full ${
+                    theme === 'dark' ? 'bg-[#b8f2e6]' : 'bg-[#aed9e0]'
+                  }`}
+                />
+              </motion.div>
 
-              {/* Description */}
-              <ul className="space-y-3">
-                {experience.description.map((point, idx) => (
-                  <motion.li
-                    key={idx}
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+              {/* Content */}
+              <div>
+                {/* Header */}
+                <div className="mb-6">
+                  <motion.h3
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 1 + idx * 0.1 }}
-                    className="group/item"
+                    transition={{ delay: 0.7 + i * 0.3 }}
+                    className={`text-3xl md:text-4xl font-bold mb-2 ${
+                      theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
+                    }`}
                   >
-                    <motion.div
-                      whileHover={{ x: 8 }}
-                      className="flex items-start gap-3"
+                    {experience.title}
+                  </motion.h3>
+                  <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.8 + i * 0.3 }}
+                    className={`text-xl md:text-2xl font-semibold mb-4 ${
+                      theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
+                    }`}
+                  >
+                    {experience.company}
+                  </motion.p>
+
+                  {/* Meta Info */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.9 + i * 0.3 }}
+                    className="flex flex-wrap gap-4"
+                  >
+                    <div className={`flex items-center gap-2 text-sm md:text-base ${
+                      theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
+                    }`}>
+                      <Calendar size={16} className={theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#aed9e0]'} />
+                      <span>{experience.period}</span>
+                    </div>
+                    <div className={`flex items-center gap-2 text-sm md:text-base ${
+                      theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
+                    }`}>
+                      <MapPin size={16} className={theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#aed9e0]'} />
+                      <span>{experience.location}</span>
+                    </div>
+                    <div className={`flex items-center gap-2 text-sm md:text-base ${
+                      theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
+                    }`}>
+                      <Briefcase size={16} className={theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#aed9e0]'} />
+                      <span>{experience.type}</span>
+                    </div>
+                  </motion.div>
+                </div>
+
+                {/* Description */}
+                <ul className="space-y-3">
+                  {experience.description.map((point, idx) => (
+                    <motion.li
+                      key={idx}
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: 1 + i * 0.3 + idx * 0.1 }}
+                      className="group/item"
                     >
                       <motion.div
-                        whileHover={{ scale: 1.3, rotate: 90 }}
-                        className={`mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full ${
-                          theme === 'dark' ? 'bg-[#b8f2e6]' : 'bg-[#aed9e0]'
-                        }`}
-                      />
-                      <span
-                        className={`text-base md:text-lg leading-relaxed ${
-                          theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
-                        } opacity-85 group-hover/item:opacity-100 transition-opacity`}
+                        whileHover={{ x: 8 }}
+                        className="flex items-start gap-3"
                       >
-                        {point}
-                      </span>
-                    </motion.div>
-                  </motion.li>
-                ))}
-              </ul>
-            </div>
-          </motion.article>
+                        <motion.div
+                          whileHover={{ scale: 1.3, rotate: 90 }}
+                          className={`mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full ${
+                            theme === 'dark' ? 'bg-[#b8f2e6]' : 'bg-[#aed9e0]'
+                          }`}
+                        />
+                        <span
+                          className={`text-base md:text-lg leading-relaxed ${
+                            theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
+                          } opacity-85 group-hover/item:opacity-100 transition-opacity`}
+                        >
+                          {point}
+                        </span>
+                      </motion.div>
+                    </motion.li>
+                  ))}
+                </ul>
+              </div>
+            </motion.article>
+          ))}
         </div>
       </div>
     </section>
