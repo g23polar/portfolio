@@ -30,7 +30,7 @@ function Hero() {
   };
 
   // Memoize name letters to prevent re-computation
-  const nameLetters = useMemo(() => "Aditya Pillai".split(""), []);
+  const nameLetters = useMemo(() => "Gautam Nair".split(""), []);
 
   return (
     <section

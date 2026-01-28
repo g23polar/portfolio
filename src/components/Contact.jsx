@@ -249,7 +249,7 @@ function Contact() {
                     }`}>Email</p>
                     <p className={`text-lg font-semibold break-all ${
                       theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
-                    }`}>pillaiaditya2310@gmail.com</p>
+                    }`}>gautamnair023@gmail.com</p>
                   </div>
                 </div>
               </motion.div>
