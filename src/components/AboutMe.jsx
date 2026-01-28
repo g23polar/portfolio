@@ -1,8 +1,7 @@
 import { motion } from 'motion/react';
 import { useContext } from 'react';
 import { ThemeContext } from '../App';
-import ProfileDark from "./../assets/profileDark.png";
-import ProfileLight from "./../assets/profileLight.png";
+import Profile from "./../assets/profile.png";
 
 
 function AboutMe() {
@@ -83,7 +82,7 @@ function AboutMe() {
                             }`}>
 
                                 <motion.img
-                                    src={theme === "dark" ? ProfileDark : ProfileLight}
+                                    src={Profile}
                                     alt="Profile"
                                     className="w-full h-full object-cover"
                                     initial={{ scale: 1.1 }}

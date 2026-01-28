@@ -9,7 +9,6 @@ import AboutMe from './components/AboutMe.jsx';
 import Skills from './components/Skills.jsx';
 import Contact from './components/Contact.jsx';
 import SnakeGame from './components/SnakeGame.jsx';
-import { AnimatePresence } from 'motion/react';
 import { Analytics } from '@vercel/analytics/react';
 
 export const ThemeContext = createContext();
@@ -177,10 +176,8 @@ function App() {
         <AboutMe />
         <Skills />
         <Contact />
+        {showSnake && <SnakeGame onClose={() => setShowSnake(false)} theme={theme} />}
       </ThemeContext.Provider>
-      <AnimatePresence>
-        {showSnake && <SnakeGame onClose={() => setShowSnake(false)} />}
-      </AnimatePresence>
     </div>
   );
 }
