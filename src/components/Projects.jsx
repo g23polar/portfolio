@@ -20,6 +20,13 @@ function Projects() {
             tags: ['FastAPI', 'SQLAlchemy/Alembic', 'Vercel', 'Render', 'Supabase'],
             link: 'https://gigconnecter-frontend.onrender.com/', 
             github: 'https://github.com/g23polar/gigconnector'
+        }, 
+        {
+            title: 'Snake Game',
+            description: 'There is a hidden snake game on this website, go find it.',
+            tags: ['hehehe'],
+            link: 'https://g23.dev/', 
+            github: 'https://github.com/g23polar/portfolio'
         }
     ];
 
