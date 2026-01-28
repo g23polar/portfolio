@@ -3,14 +3,6 @@ import { useContext } from 'react';
 import { ThemeContext } from '../App';
 import { MapPin, Briefcase, Calendar } from 'lucide-react';
 
-let link = document.createElement("a")
-let txt = document.createTextNode("Medium Post 1")
-link.appendChild(txt)
-link.title ="Medium Post 2";
-link.href = "https://gigconnecter-frontend.onrender.com/";
-let el = document.getElementById("p")
-el.appendChild(link)
-
 function Experience() {
   const { theme } = useContext(ThemeContext);
 
@@ -26,7 +18,7 @@ function Experience() {
       'Building a one stop shop for musician-venue collaboration',
       'Sign up for local performances',
       'Track your earnings, event history, gross revenue, ticket sales and more.',  
-      'Check it out at: https://gigconnecter-frontend.onrender.com/' + el
+      'Check it out at: https://gigconnecter-frontend.onrender.com/'
     ]
   },
     
