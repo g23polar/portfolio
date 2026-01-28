@@ -136,7 +136,7 @@ function Hero() {
             theme === "dark" ? "text-[#aed9e0]/90" : "text-[#5e6472]/80"
           }`}
         >
-          Full-Stack Developer & Creative Thinker
+          engineer, climber, and catan-enjoyer
         </motion.p>
 
         {/* Decorative line */}

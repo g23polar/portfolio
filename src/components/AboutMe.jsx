@@ -175,12 +175,11 @@ function AboutMe() {
                                 theme === "dark" ? "text-[#aed9e0]" : "text-[#5e6472]"
                             }`}
                         >
-                            <p className="text-xl md:text-2xl font-light"> /** todo */
-                                I'm a passionate developer with a knack for building clean, efficient, and user-friendly applications.
+                            <p className="text-xl md:text-2xl font-light"> 
+                                I like building things people like to use, 
                             </p>
-                            
-                            <p className="text-base md:text-lg opacity-90"> /** todo */
-                                I love exploring new technologies and solving complex problems with creative solutions.
+                            <p className="text-base md:text-lg opacity-90"> 
+                                and I like people who like to build. 
                             </p>
 
                             
