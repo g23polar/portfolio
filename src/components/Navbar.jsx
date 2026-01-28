@@ -1,12 +1,27 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { ThemeContext } from './../App';
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useState, useEffect, useRef, useCallback } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 
-function Navbar() {
+function Navbar({ onEasterEgg }) {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const clickCountRef = useRef(0);
+  const clickTimerRef = useRef(null);
+
+  const handleLogoClick = useCallback(() => {
+    clickCountRef.current += 1;
+    if (clickTimerRef.current) clearTimeout(clickTimerRef.current);
+    if (clickCountRef.current >= 3) {
+      clickCountRef.current = 0;
+      onEasterEgg?.();
+    } else {
+      clickTimerRef.current = setTimeout(() => {
+        clickCountRef.current = 0;
+      }, 2000);
+    }
+  }, [onEasterEgg]);
 
   const navItems = ['Home', 'Experience','Projects', 'About', 'Skills', 'Contact'];
 
@@ -55,7 +70,8 @@ function Navbar() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="relative group"
+            className="relative group cursor-pointer select-none"
+            onClick={handleLogoClick}
           >
             <motion.div
               className={`text-2xl font-bold tracking-tight ${

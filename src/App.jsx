@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useRef, useMemo } from 'react';
+import React, { createContext, useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { tsParticles } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
 import Navbar from './components/Navbar';
@@ -8,6 +8,8 @@ import Experience from './components/Experience.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Skills from './components/Skills.jsx';
 import Contact from './components/Contact.jsx';
+import SnakeGame from './components/SnakeGame.jsx';
+import { AnimatePresence } from 'motion/react';
 import { Analytics } from '@vercel/analytics/react';
 
 export const ThemeContext = createContext();
@@ -16,6 +18,8 @@ function App() {
   console.log('App component rendered');
   const particlesContainerRef = useRef(null);
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
+  const [showSnake, setShowSnake] = useState(false);
+  const handleEasterEgg = useCallback(() => setShowSnake(true), []);
 
   useEffect(() => {
     console.log('Theme updated:', theme);
@@ -166,7 +170,7 @@ function App() {
       />
       <Analytics />
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <Navbar />
+        <Navbar onEasterEgg={handleEasterEgg} />
         <Hero />
         <Experience />
         <Projects />
@@ -174,6 +178,9 @@ function App() {
         <Skills />
         <Contact />
       </ThemeContext.Provider>
+      <AnimatePresence>
+        {showSnake && <SnakeGame onClose={() => setShowSnake(false)} />}
+      </AnimatePresence>
     </div>
   );
 }

@@ -82,7 +82,7 @@ function Hero() {
             theme === "dark" ? "text-[#aed9e0]/70" : "text-[#5e6472]/60"
           }`}
         >
-          Hello! I'm
+          Yo! Nice to see you here, I'm
         </motion.div>
 
         {/* Name - Optimized with reduced animations */}
