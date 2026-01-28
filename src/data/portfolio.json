@@ -1,6 +1,6 @@
 {
   "personal": {
-    "name": "Gautam Nair",
+    "name": "dpoes this work",
     "title": "Full Stack Developer",
     "tagline": "wtf ... ",
     "bio": "tesssfdsad",
@@ -16,10 +16,10 @@
   "experience": [
     {
       "id": "exp1",
-      "company": "Tech Company Inc.",
-      "role": "Senior Software Engineer",
-      "period": "2022 - Present",
-      "location": "San Francisco, CA",
+      "company": "Marketaxess",
+      "role": "Associate Software Engineer",
+      "period": "September 2022 - November 2025",
+      "location": "New York City, NY",
       "description": "Leading development of core platform features serving millions of users.",
       "highlights": [
         "Led migration of legacy system to modern React architecture",
@@ -60,11 +60,10 @@
   "education": [
     {
       "id": "edu1",
-      "institution": "University of Technology",
-      "degree": "Bachelor of Science in Computer Science",
-      "period": "2014 - 2018",
-      "location": "Boston, MA",
-      "gpa": "3.8/4.0",
+      "institution": "Virginia Tecg",
+      "degree": "Bachelor of Science in Computer Science, Minors in Math and Philosophy",
+      "period": "2018 - 2022",
+      "location": "Blacksburg, VA",
       "highlights": [
         "Dean's List all semesters",
         "Senior thesis on machine learning applications",
@@ -73,14 +72,12 @@
     },
     {
       "id": "edu2",
-      "institution": "Online Learning Platform",
-      "degree": "Full Stack Web Development Bootcamp",
-      "period": "2018",
-      "location": "Online",
+      "institution": "Cathedral and John Connon School",
+      "degree": "International Baccalaureate",
+      "period": "2012-2018",
+      "location": "Mumbai, India",
       "highlights": [
-        "Intensive 12-week program",
-        "Built 5 full-stack projects",
-        "Graduated with honors"
+        "Higher Level: Math, Physics, Economics "
       ]
     }
   ],
@@ -126,7 +123,7 @@
     }
   ],
   "skills": {
-    "languages": ["JavaScript", "TypeScript", "Python", "Go", "SQL"],
+    "languages": ["Java"],
     "frontend": ["React", "Next.js", "Vue.js", "Tailwind CSS", "Framer Motion"],
     "backend": ["Node.js", "Express", "FastAPI", "GraphQL", "REST APIs"],
     "databases": ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
