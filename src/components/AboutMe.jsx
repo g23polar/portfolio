@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import { useContext } from 'react';
 import { ThemeContext } from '../App';
-import ProfileDark from "./../assets/profileDark.jpg"
-import ProfileLight from "./../assets/profileLight.jpeg"
+import ProfileDark from "./../assets/profileDark.jpg";
+import ProfileLight from "./../assets/profileLight.jpeg";
 
 
 function AboutMe() {
