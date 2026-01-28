@@ -8,7 +8,6 @@ import Experience from './components/Experience.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Skills from './components/Skills.jsx';
 import Contact from './components/Contact.jsx';
-import AnalyticsTracker from './components/AnalyticsTracker.jsx';
 import { Analytics } from '@vercel/analytics/react';
 
 export const ThemeContext = createContext();
@@ -166,7 +165,6 @@ function App() {
         style={{ minHeight: '100vh', zIndex: -10 }} // Lower z-index
       />
       <Analytics />
-      <AnalyticsTracker />
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <Navbar />
         <Hero />

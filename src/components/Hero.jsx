@@ -1,19 +1,12 @@
 import { motion } from 'motion/react';
 import { ThemeContext } from '../App';
 import { useContext, useMemo } from 'react';
-import ReactGA from 'react-ga4';
 import { FileText, Mail } from 'lucide-react';
 
 function Hero() {
   const { theme } = useContext(ThemeContext);
 
   const handleResume = () => {
-    ReactGA.event({
-      category: "Resume",
-      action: "View",
-      label: "Resume PDF",
-    });
-    
     window.open(
       "https://drive.google.com/file/d/1b7_xr5SbCWuRyOd_We0x1UAxb0btyLfl/view?usp=sharing",
       "_blank",

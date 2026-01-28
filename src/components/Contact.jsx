@@ -1,7 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { motion, AnimatePresence } from 'motion/react';
 import { useContext, useState, useEffect } from 'react';
-import ReactGA from 'react-ga4';
 import { ThemeContext } from '../App';
 
 // Simple input sanitization function
@@ -80,13 +79,6 @@ function Contact() {
           setFormData({ name: '', email: '', message: '' });
           setErrors({});
           setToast({ type: 'success', message: 'Message sent successfully!' });
-          if (ReactGA.isInitialized) {
-            ReactGA.event({
-              category: 'Contact Form',
-              action: 'Submit',
-              label: sanitizedData.email,
-            });
-          }
         },
         (err) => {
           setIsLoading(false);
