@@ -3,10 +3,34 @@ import { useContext } from 'react';
 import { ThemeContext } from '../App';
 import { MapPin, Briefcase, Calendar } from 'lucide-react';
 
+let link = document.createElement("a")
+let txt = document.createTextNode("Medium Post 1")
+link.appendChild(txt)
+link.title ="Medium Post 2";
+link.href = "https://gigconnecter-frontend.onrender.com/";
+let el = document.getElementById("p")
+el.appendChild(link)
+
 function Experience() {
   const { theme } = useContext(ThemeContext);
 
-  const experiences = [{
+  const experiences = [
+     
+  {
+    title:'Founder ?, part-time PM, definitely Software Engineer', 
+    company:'Gig Connector',
+    period:'Present', 
+    location:'New York City, NY' ,
+    type:'Full-time + rest of my day', 
+    description:[
+      'Building a one stop shop for musician-venue collaboration',
+      'Sign up for local performances',
+      'Track your earnings, event history, gross revenue, ticket sales and more.',  
+      'Check it out at: https://gigconnecter-frontend.onrender.com/' + el
+    ]
+  },
+    
+  {
     title: 'Software Engineer',
     company: 'MarketAxess',
     period: 'Sep 2022 - Nov 2025',
@@ -27,19 +51,6 @@ function Experience() {
     description:[
       'Built a back-end PowerShell library to automate forensic reporting and aid endpoint clients to perform 27 administrative and security tasks including running YARA scans, manipulating file systems, and performing WMI queries.', 
       'Enabled remote endpoints to store system reports, logs, and more to AWS (S3 and Glacier).']
-  }, 
-  {
-    title:'Founder ?, part-time PM, definitely Software Engineer', 
-    company:'Gig Connector',
-    period:'Present', 
-    location:'New York City, NY' ,
-    type:'Full-time + rest of my day', 
-    description:[
-      'Building a one stop shop for musician-venue collaboration',
-      'Sign up for local performances',
-      'Track your earnings, event history, gross revenue, ticket sales and more.',  
-      'Check it out here https://gigconnecter-frontend.onrender.com/'
-    ]
   }
 ]
 
