@@ -81,6 +81,7 @@ function Contact() {
           setToast({ type: 'success', message: 'Message sent successfully!' });
         },
         (err) => {
+          console.error('EmailJS error:', err);
           setIsLoading(false);
           const errorMessage = err.text?.includes('timeout')
             ? 'Request timed out. Please try again.'
