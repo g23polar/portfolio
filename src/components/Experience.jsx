@@ -7,17 +7,20 @@ function Experience() {
   const { theme } = useContext(ThemeContext);
 
   const experience = {
-    title: 'SWE Intern',
-    company: 'Labdox',
-    period: 'Nov 2025 – Present',
-    location: 'Pune, India',
-    type: 'Remote',
+    title: 'Software Engineer',
+    company: 'MarketAxess',
+    period: 'Sep 2022 - Nov 2025',
+    location: 'New York City, NY',
+    type: 'Full-time',
     description: [
-      'Developed and maintained production frontend components using HTML, CSS, and JavaScript.',
-      'Built responsive, mobile-first interfaces and implemented UI enhancements focused on usability and performance.',
-      'Translated product and design requirements into functional, user-facing features.',
-      'Collaborated remotely in a fast-paced startup environment to deliver features within tight timelines.',
-    ],
+      'Led implementation of new FINRA regulatory requirements on post trade messages communicated over FIX protocols (API) for U.S. dealers making large Portfolio trades, saving companies large amounts ($1M + per intrusion) on fines.', 
+'Led implementation to allow liquidity takers to perform amendments on agreed spread while maintaining delayed spot.',
+'Built 16 full-stack and API features, stretching across tech stacks - specialized in FIX for 18 months', 
+'Part of agile scrum team focused on developing and maintaining hedging services to enable companies to hedge corporate risk by leveraging liquidity provided by Liquidity Edge and Goldman Sachs and perform larger blocks trades.' ,
+'Provided real time production support for trading desks. Responsibilities included identifying bugs across platform and servers, recommending fixes, and communicating with upper management.', 
+'Ran point for a total of 8 major environment releases/disaster recovery scenarios.', 
+'Worked closely with industry experts and product/project managers to build and maintain CI/CD pipelines.',
+'Participated in mentorship program to guide 2 interns navigate complex projects and complete assignments.'],
   };
 
   return (

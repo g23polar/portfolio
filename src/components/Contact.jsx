@@ -212,7 +212,7 @@ function Contact() {
                     }`}>Phone</p>
                     <p className={`text-lg font-semibold ${
                       theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
-                    }`}>+91 9726201738</p>
+                    }`}>+1 (571)328-2102</p>
                   </div>
                 </div>
               </motion.div>

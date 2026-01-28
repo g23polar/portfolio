@@ -5,21 +5,7 @@ import { ThemeContext } from '../App';
 function Skills() {
     const {theme} = useContext(ThemeContext);
     const skills = [
-        'HTML5',
-        'CSS3',
-        'JavaScript',
-        'React',
-        'Python',
-        'Tailwind CSS',
-        'Java',
-        'C++',
-        'C',
-        'Astro', 
-        'Vite',
-        'CLI Development',
-        'Git',
-        'GitHub',
-        'UI/UX',
+        'Java' // TODO
     ];
 
     const containerVariants = {

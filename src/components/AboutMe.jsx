@@ -1,8 +1,7 @@
 import { motion } from 'motion/react';
 import { useContext } from 'react';
 import { ThemeContext } from '../App';
-import ProfileDark from "./../assets/profileDark.jpg"
-import ProfileLight from "./../assets/profileLight.jpeg"
+
 
 function AboutMe() {
     const {theme} = useContext(ThemeContext);
@@ -80,15 +79,6 @@ function AboutMe() {
                                     ? "border-[#b8f2e6]/30 bg-[#1c1c1c]"
                                     : "border-[#aed9e0]/50 bg-white"
                             }`}>
-                                <motion.img
-                                    src={theme === "dark" ? ProfileDark : ProfileLight}
-                                    alt="Profile"
-                                    className="w-full h-full object-cover"
-                                    initial={{ scale: 1.1 }}
-                                    whileInView={{ scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.8 }}
-                                />
                                 
                                 {/* Overlay gradient on hover */}
                                 <motion.div
@@ -174,11 +164,11 @@ function AboutMe() {
                                 theme === "dark" ? "text-[#aed9e0]" : "text-[#5e6472]"
                             }`}
                         >
-                            <p className="text-xl md:text-2xl font-light">
+                            <p className="text-xl md:text-2xl font-light"> /** todo */
                                 I'm a passionate developer with a knack for building clean, efficient, and user-friendly applications.
                             </p>
                             
-                            <p className="text-base md:text-lg opacity-90">
+                            <p className="text-base md:text-lg opacity-90"> /** todo */
                                 I love exploring new technologies and solving complex problems with creative solutions.
                             </p>
 

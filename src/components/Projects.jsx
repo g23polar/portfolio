@@ -8,25 +8,18 @@ function Projects() {
     
     const projects = [
         {
-            title: 'Budget Buddy',
-            description: 'Developed a responsive personal finance web application that enables users to set monthly budgets, track categorized expenses, and monitor spending in real time.',
-            tags: ['HTML5', 'CSS3', 'JavaScript'],
-            link: 'https://my-budget-buddy-app.netlify.app/', 
-            github: 'https://github.com/A23droid/budget-buddy' 
+            title: 'Council of Engineers',
+            description: 'Built a CLI-based agent driven orchestration platform with the ability to spawn agents with defined roles with specific responsibilities to simulate a standard AGILE scrum team',
+            tags: ['Python', 'TMUX', 'Claude'],
+            link: 'https://github.com/g23polar/council',  
+            github: 'https://github.com/g23polar/council' 
         },
         {
-            title: 'Quick Talk',
-            description: 'A sleek, responsive real-time chat app built with React and TailwindCSS. Supports light/dark themes, smooth animations, and keyboard shortcuts.',
-            tags: ['React', 'TailwindCSS'],
-            link: 'https://quick-talk-red.vercel.app/', 
-            github: 'https://github.com/A23droid/quick-talk'
-        },
-        {
-            title: 'The LogBook',
-            description: 'Built a developer-focused blog featuring dynamic routing, tag-based filtering, and Markdown-driven content. Implemented a consistent dark-theme UI and deployed the production build on Vercel.',
-            tags: ['Astro', 'React', 'TailwindCSS'],
-            link: 'https://the-logbook-seven.vercel.app/',
-            github: 'https://github.com/A23droid/the-logbook'
+            title: 'Gig Connector',
+            description: 'Currently building: Platform for local musicians and venues to find each other',
+            tags: ['FastAPI', 'SQLAlchemy/Alembic', 'Vercel', 'Render', 'Supabase'],
+            link: 'https://gigconnecter-frontend.onrender.com/', 
+            github: 'https://github.com/g23polar/gigconnector'
         }
     ];
 
@@ -140,7 +133,7 @@ function Projects() {
                     className="text-center mt-16"
                 >
                     <motion.a
-                        href="https://github.com/A23droid"
+                        href="https://github.com/g23polar"
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05, y: -2 }}
