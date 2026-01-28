@@ -51,12 +51,6 @@ export default function Education() {
                   <MapPin size={14} />
                   <span>{edu.location}</span>
                 </div>
-                {edu.gpa && (
-                  <div className="flex items-center gap-1 text-dark-400">
-                    <Award size={14} />
-                    <span>GPA: {edu.gpa}</span>
-                  </div>
-                )}
               </div>
 
               {/* Highlights */}
