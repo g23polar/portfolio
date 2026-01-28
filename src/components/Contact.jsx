@@ -188,7 +188,7 @@ function Contact() {
             </div>
 
             {/* Contact Cards */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <motion.div
                 whileHover={{ scale: 1.02, x: 10 }}
                 className={`p-6 rounded-2xl backdrop-blur-sm border transition-all duration-300 ${
@@ -213,12 +213,12 @@ function Contact() {
                     }`}>Phone</p>
                     <p className={`text-lg font-semibold ${
                       theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
-                    }`}>+1 (571)328-2102</p>
+                    }`}>+1 </p>
                   </div>
                 </div>
-              </motion.div>
+              </motion.div> */}
 
-              <motion.div
+              {/* <motion.div
                 whileHover={{ scale: 1.02, x: 10 }}
                 className={`p-6 rounded-2xl backdrop-blur-sm border transition-all duration-300 ${
                   theme === 'dark'
@@ -242,11 +242,11 @@ function Contact() {
                     }`}>Email</p>
                     <p className={`text-lg font-semibold break-all ${
                       theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
-                    }`}>gautamnair023@gmail.com</p>
+                    }`}>@gmail.com</p>
                   </div>
                 </div>
               </motion.div>
-            </div>
+            </div> */}
 
             {/* Social Links */}
             <motion.div
