@@ -29,14 +29,16 @@ function Experience() {
       'Enabled remote endpoints to store system reports, logs, and more to AWS (S3 and Glacier).']
   }, 
   {
-    title:'', 
-    company:'',
-    period:'', 
-    location:'' ,
-    type:'', 
+    title:'Founder ?, part-time PM, definitely Software Engineer', 
+    company:'Gig Connector',
+    period:'Present', 
+    location:'New York City, NY' ,
+    type:'Full-time + rest of my day', 
     description:[
-      '',
-      ''
+      'Building a one stop shop for musician-venue collaboration',
+      'Sign up for local performances',
+      'Track your earnings, event history, gross revenue, ticket sales and more.',  
+      'Check it out here https://gigconnecter-frontend.onrender.com/'
     ]
   }
 ]
