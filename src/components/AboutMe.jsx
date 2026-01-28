@@ -1,6 +1,8 @@
 import { motion } from 'motion/react';
 import { useContext } from 'react';
 import { ThemeContext } from '../App';
+import ProfileDark from "./../assets/profileDark.jpg"
+import ProfileLight from "./../assets/profileLight.jpeg"
 
 
 function AboutMe() {
@@ -79,6 +81,16 @@ function AboutMe() {
                                     ? "border-[#b8f2e6]/30 bg-[#1c1c1c]"
                                     : "border-[#aed9e0]/50 bg-white"
                             }`}>
+
+                                <motion.img
+                                    src={theme === "dark" ? ProfileDark : ProfileLight}
+                                    alt="Profile"
+                                    className="w-full h-full object-cover"
+                                    initial={{ scale: 1.1 }}
+                                    whileInView={{ scale: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.8 }}
+                                />
                                 
                                 {/* Overlay gradient on hover */}
                                 <motion.div
