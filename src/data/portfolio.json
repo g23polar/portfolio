@@ -1,9 +1,9 @@
 {
   "personal": {
-    "name": "dpoes this work",
-    "title": "Full Stack Developer",
-    "tagline": "wtf ... ",
-    "bio": "tesssfdsad",
+    "name": "Gautam Nair",
+    "title": "Engineer",
+    "tagline": "",
+    "bio": "",
     "email": "gautamnair023@gmail.com",
     "location": "New York, NY",
     "avatar": "/avatar.jpg",
@@ -16,58 +16,43 @@
   "experience": [
     {
       "id": "exp1",
-      "company": "Marketaxess",
+      "company": "MarketAxess",
       "role": "Associate Software Engineer",
-      "period": "September 2022 - November 2025",
+      "period": "Sep 2022 - Nov 2025",
       "location": "New York City, NY",
       "description": "Leading development of core platform features serving millions of users.",
       "highlights": [
-        "Led migration of legacy system to modern React architecture",
-        "Reduced page load time by 40% through performance optimizations",
-        "Mentored team of 5 junior developers"
+        "Led implementation of new FINRA regulatory requirements on post trade messages communicated over FIX protocols (API) for U.S. dealers making large Portfolio trades, saving clients $1M + per intrusion on fines",
+        "Led implementation to allow liquidity takers to perform amendments on agreed spread while maintaining delayed spot",
+        "Built 16 full-stack and API features, stretching across tech stacks - specialized in FIX for 18 months"
       ],
-      "technologies": ["React", "TypeScript", "Node.js", "AWS"]
+      "technologies": ["System Architecture","Legacy Java", "Kafka", "SonicMQ", "High-concurrency processing"]
     },
     {
       "id": "exp2",
-      "company": "Startup XYZ",
-      "role": "Full Stack Developer",
-      "period": "2020 - 2022",
+      "company": "Sentinel One",
+      "role": "Software Engineer",
+      "period": "Jun 2020 — Jan 2021",
       "location": "Remote",
       "description": "Built and scaled the company's main product from MVP to production.",
       "highlights": [
-        "Developed real-time collaboration features using WebSockets",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Integrated third-party APIs for payment and analytics"
+        "Built a CLI PowerShell library to automate forensic reporting and aid endpoint clients to perform 27 administrative and security tasks including running YARA scans, manipulating file systems, and performing WMI queries",
+        "Enabled remote endpoints to store system reports, logs, and more to AWS (S3 and Glacier)."
       ],
       "technologies": ["Vue.js", "Python", "PostgreSQL", "Docker"]
-    },
-    {
-      "id": "exp3",
-      "company": "Digital Agency",
-      "role": "Junior Developer",
-      "period": "2018 - 2020",
-      "location": "New York, NY",
-      "description": "Developed responsive websites and web applications for various clients.",
-      "highlights": [
-        "Built 20+ client websites using modern frameworks",
-        "Collaborated with design team to implement pixel-perfect UIs",
-        "Introduced automated testing practices to the team"
-      ],
-      "technologies": ["JavaScript", "React", "SCSS", "PHP"]
     }
   ],
   "education": [
     {
       "id": "edu1",
-      "institution": "Virginia Tecg",
-      "degree": "Bachelor of Science in Computer Science, Minors in Math and Philosophy",
+      "institution": "Virginia Tech",
+      "degree": "Bachelor of Science in Computer Science, ",
       "period": "2018 - 2022",
       "location": "Blacksburg, VA",
       "highlights": [
-        "Dean's List all semesters",
-        "Senior thesis on machine learning applications",
-        "President of Computer Science Club"
+        "Minors in Math and Philosophy",
+        "Coder for Virginia Tech International Collegiate Programming Team",
+        "Member of Engineering World Health: Biomedical engineering group aimed at tackling large scale health issues"
       ]
     },
     {
@@ -84,42 +69,22 @@
   "projects": [
     {
       "id": "proj1",
-      "title": "E-Commerce Platform",
-      "description": "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      "image": "/projects/ecommerce.jpg",
-      "technologies": ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com/username/ecommerce",
+      "title": "Gig Connector",
+      "description": "Currently building: platform for local musicians and venues to find each other.",
+      "image": "/projects/taskapp.jpg",
+      "technologies": ["FastAPI", "SQLAlchemy/Alembic", "Vercel", "Render", "Supabase"],
+      "liveUrl": "https://gigconnecter-frontend.onrender.com/",
+      "githubUrl": "https://github.com/g23polar/gigconnector",
       "featured": true
     },
     {
       "id": "proj2",
-      "title": "Task Management App",
-      "description": "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
-      "image": "/projects/taskapp.jpg",
-      "technologies": ["React", "Firebase", "Tailwind CSS"],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com/username/taskapp",
-      "featured": true
-    },
-    {
-      "id": "proj3",
-      "title": "Weather Dashboard",
-      "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and severe weather alerts.",
+      "title": "Council of Engineers",
+      "description": "Built a CLI-based agent driven orchestration platform with the ability to spawn agents with defined roles with specific responsibilities to simulate a standard AGILE scrum team.",
       "image": "/projects/weather.jpg",
-      "technologies": ["Vue.js", "OpenWeather API", "Chart.js"],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com/username/weather",
-      "featured": false
-    },
-    {
-      "id": "proj4",
-      "title": "Portfolio Generator",
-      "description": "A CLI tool that generates beautiful portfolio websites from a simple configuration file.",
-      "image": "/projects/portfolio-gen.jpg",
-      "technologies": ["Node.js", "Handlebars", "Commander.js"],
-      "githubUrl": "https://github.com/username/portfolio-gen",
-      "featured": false
+      "technologies": ["Python", "TMUX", "Claude"],
+      "githubUrl": "https://github.com/g23polar/council",
+      "featured": true
     }
   ],
   "skills": {
@@ -129,34 +94,5 @@
     "databases": ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
     "devops": ["Docker", "AWS", "Vercel", "GitHub Actions", "CI/CD"],
     "tools": ["Git", "VS Code", "Figma", "Postman", "Jest"]
-  },
-  "blog": [
-    {
-      "id": "blog1",
-      "title": "Building Performant React Applications",
-      "slug": "building-performant-react-apps",
-      "excerpt": "Learn the key techniques for optimizing React applications, from code splitting to memoization.",
-      "date": "2024-01-15",
-      "readTime": "8 min read",
-      "tags": ["React", "Performance", "JavaScript"]
-    },
-    {
-      "id": "blog2",
-      "title": "A Guide to Modern CSS Layouts",
-      "slug": "modern-css-layouts",
-      "excerpt": "Explore CSS Grid, Flexbox, and Container Queries for building responsive layouts.",
-      "date": "2024-01-08",
-      "readTime": "6 min read",
-      "tags": ["CSS", "Web Design", "Frontend"]
-    },
-    {
-      "id": "blog3",
-      "title": "Getting Started with TypeScript",
-      "slug": "getting-started-typescript",
-      "excerpt": "A beginner-friendly introduction to TypeScript and its benefits for JavaScript developers.",
-      "date": "2024-01-01",
-      "readTime": "10 min read",
-      "tags": ["TypeScript", "JavaScript", "Tutorial"]
-    }
-  ]
+  }
 }
