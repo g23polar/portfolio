@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { CSSPlugin } from 'gsap/CSSPlugin';
-import SignatureSVG from '../assets/AP.svg?react';
+import SignatureSVG from '../assets/G23.png?react';
 
 // Register CSSPlugin
 gsap.registerPlugin(CSSPlugin);
