@@ -94,5 +94,16 @@
     "databases": ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
     "devops": ["Docker", "AWS", "Vercel", "GitHub Actions", "CI/CD"],
     "tools": ["Git", "VS Code", "Figma", "Postman", "Jest"]
-  }
+  },
+  "blog": [
+    {
+      "id": "blog1",
+      "title": "Counter-argument to Hume’s skepticism of necessitarian views of causality",
+      "slug": "blog-hume",
+      "excerpt": "Learn the key techniques for optimizing React applications, from code splitting to memoization.",
+      "date": "2021-12-12",
+      "readTime": "5 min read",
+      "tags": ["David Hume", "Skepticism", "Causality"]
+    }
+  ]
 }
