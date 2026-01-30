@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { useContext } from 'react';
 import { ThemeContext } from '../App';
 import Profile from "./../assets/profile.png";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 
 function AboutMe() {
@@ -178,11 +179,40 @@ function AboutMe() {
                             <p className="text-xl md:text-2xl font-light"> 
                                 I like building things people like to use, 
                             </p>
-                            <p className="text-base md:text-lg opacity-90"> 
-                                and I like people who like to build. 
+                            <p className="text-base md:text-lg opacity-90">
+                                and I like people who like to build.
                             </p>
 
-                            
+                            <div className="flex gap-5 pt-4">
+                                <motion.a
+                                    href="https://github.com/g23polar"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    whileHover={{ scale: 1.15, y: -2 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className={`text-2xl transition-colors duration-300 ${
+                                        theme === "dark"
+                                            ? "text-[#aed9e0] hover:text-[#b8f2e6]"
+                                            : "text-[#5e6472] hover:text-[#aed9e0]"
+                                    }`}
+                                >
+                                    <FaGithub />
+                                </motion.a>
+                                <motion.a
+                                    href="https://www.linkedin.com/in/g23"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    whileHover={{ scale: 1.15, y: -2 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className={`text-2xl transition-colors duration-300 ${
+                                        theme === "dark"
+                                            ? "text-[#aed9e0] hover:text-[#b8f2e6]"
+                                            : "text-[#5e6472] hover:text-[#aed9e0]"
+                                    }`}
+                                >
+                                    <FaLinkedin />
+                                </motion.a>
+                            </div>
                         </motion.div>
                     </motion.div>
                 </div>
