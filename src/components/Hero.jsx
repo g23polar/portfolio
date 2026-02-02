@@ -232,7 +232,7 @@ function Hero() {
             transition={{ duration: 0.2 }}
           >
             <PopupButton
-              url="https://calendly.com/gautamnair023/gautam-nair-30min"
+              url="https://calendly.com/gautamnair023/gautam-nair-30min-googlemeet-clone"
               rootElement={document.getElementById("root")}
               className={`
                 group px-8 py-4 rounded-2xl font-semibold text-base md:text-lg
@@ -259,7 +259,7 @@ function Hero() {
             transition={{ duration: 0.2 }}
           >
             <PopupButton
-              url="https://calendly.com/gautamnair023/gautam-nair-30min"
+              url="https://calendly.com/gautamnair023/30min"
               rootElement={document.getElementById("root")}
               className={`
                 group px-8 py-4 rounded-2xl font-semibold text-base md:text-lg
