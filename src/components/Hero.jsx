@@ -224,7 +224,7 @@ function Hero() {
             </span>
           </motion.a>
 
-          {/* Calendly CTA */}
+          {/* Calendly phone call CTA */}
           <motion.div
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.98 }}
@@ -245,6 +245,33 @@ function Hero() {
                 <span className="flex items-center gap-2.5">
                   <Calendar size={20} className="flex-shrink-0" />
                   Schedule a Call
+                </span>
+              }
+            />
+          </motion.div>
+
+
+          {/* Calendly google meet CTA */}
+          <motion.div
+            whileHover={{ y: -4 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.2 }}
+          >
+            <PopupButton
+              url="https://calendly.com/gautamnair023/gautam-nair-30min-googlemeet"
+              rootElement={document.getElementById("root")}
+              className={`
+                group px-8 py-4 rounded-2xl font-semibold text-base md:text-lg
+                transition-all duration-300 border-2 cursor-pointer
+                ${theme === "dark"
+                  ? "border-[#b8f2e6]/40 text-[#b8f2e6] hover:bg-[#b8f2e6]/10 hover:border-[#b8f2e6]"
+                  : "border-[#5e6472]/30 text-[#5e6472] hover:bg-[#5e6472]/5 hover:border-[#5e6472]"
+                }
+              `}
+              text={
+                <span className="flex items-center gap-2.5">
+                  <Calendar size={20} className="flex-shrink-0" />
+                  Schedule a Google Meet
                 </span>
               }
             />

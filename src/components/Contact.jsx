@@ -253,6 +253,7 @@ function Contact() {
                   </div>
                 </div>
               </motion.a>
+
               <motion.div
                 whileHover={{ scale: 1.02, x: 10 }}
                 className={`block p-6 rounded-2xl backdrop-blur-sm border transition-all duration-300 ${
@@ -281,7 +282,42 @@ function Contact() {
                       className={`text-lg font-semibold cursor-pointer ${
                         theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
                       }`}
-                      text="Schedule a 30min Call"
+                      text="Schedule a call"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+
+
+              <motion.div
+                whileHover={{ scale: 1.02, x: 10 }}
+                className={`block p-6 rounded-2xl backdrop-blur-sm border transition-all duration-300 ${
+                  theme === 'dark'
+                    ? 'bg-[#b8f2e6]/10 border-[#b8f2e6]/20 hover:bg-[#b8f2e6]/20'
+                    : 'bg-[#aed9e0]/20 border-[#aed9e0]/40 hover:bg-[#aed9e0]/30'
+                }`}
+              >
+                <div className="flex items-center space-x-4">
+                  <div className={`p-3 rounded-xl ${
+                    theme === 'dark' ? 'bg-[#b8f2e6]/20' : 'bg-[#aed9e0]/50'
+                  }`}>
+                    <svg className={`w-6 h-6 ${
+                      theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
+                    }`} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className={`text-sm opacity-75 ${
+                      theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
+                    }`}>Calendly</p>
+                    <PopupButton
+                      url="https://calendly.com/gautamnair023/gautam-nair-30min-googlemeet"
+                      rootElement={document.getElementById("root")}
+                      className={`text-lg font-semibold cursor-pointer ${
+                        theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
+                      }`}
+                      text="Schedule a Google Meet"
                     />
                   </div>
                 </div>
