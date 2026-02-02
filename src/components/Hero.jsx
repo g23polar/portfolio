@@ -154,7 +154,7 @@ function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-col sm:flex-row gap-5 justify-center items-center"
+          className="flex flex-col gap-8 justify-center items-center"
         >
           {/* Primary CTA */}
           <motion.button
@@ -201,6 +201,7 @@ function Hero() {
             </span>
           </motion.button>
 
+          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
           {/* Secondary CTA */}
           <motion.a
             href="#contact"
@@ -276,6 +277,7 @@ function Hero() {
               }
             />
           </motion.div>
+          </div>
         </motion.div>
 
         {/* Scroll indicator - Optimized animation */}
