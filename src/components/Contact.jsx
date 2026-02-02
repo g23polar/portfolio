@@ -312,7 +312,7 @@ function Contact() {
                       theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
                     }`}>Calendly</p>
                     <PopupButton
-                      url="https://calendly.com/gautamnair023/gautam-nair-30min-googlemeet"
+                      url="https://calendly.com/gautamnair023/gautam-nair-30min"
                       rootElement={document.getElementById("root")}
                       className={`text-lg font-semibold cursor-pointer ${
                         theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
