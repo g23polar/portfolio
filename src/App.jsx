@@ -171,9 +171,9 @@ function App() {
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <Navbar onEasterEgg={handleEasterEgg} />
         <Hero />
+        <AboutMe />
         <Experience />
         <Projects />
-        <AboutMe />
         <Skills />
         <Contact />
         {showSnake && <SnakeGame onClose={() => setShowSnake(false)} theme={theme} />}
