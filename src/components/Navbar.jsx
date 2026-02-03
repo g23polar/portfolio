@@ -35,7 +35,7 @@ function Navbar({ onEasterEgg }) {
 
   const handleNavClick = (e, item) => {
     e.preventDefault();
-    const sectionId = item.toLowerCase();
+    const sectionId = item.toLowerCase().replace(/\s+/g, '-');
     const section = document.getElementById(sectionId);
     if (section) {
       if (isMobileMenuOpen) {
@@ -95,7 +95,7 @@ function Navbar({ onEasterEgg }) {
             {navItems.map((item, idx) => (
               <motion.a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
@@ -247,7 +247,7 @@ function Navbar({ onEasterEgg }) {
                 {navItems.map((item, idx) => (
                   <motion.a
                     key={item}
-                    href={`#${item.toLowerCase()}`}
+                    href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: idx * 0.05 }}

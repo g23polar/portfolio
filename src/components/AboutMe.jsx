@@ -10,7 +10,7 @@ function AboutMe() {
 
     return (
         <section
-            id="about"
+            id="about-me"
             className={`py-24 px-6 relative overflow-hidden bg-transparent`}
         >
             {/* Animated background elements */}
