@@ -52,7 +52,8 @@ function Experience() {
   {
     title:'Analytics Engineering Intern', company:'8x8, inc.', period:'May 2019 - Aug 2019', location:'San Jose, CA', type:'Intern',
     description:[
-      'Optimized lead generation and churn prevention: Automated data transfer of 10 - 80GB /month between provider and sales team by building pipeline to stream leads through 4 separate enrichment and cloud caching algorithms'
+      'Optimized lead generation and churn prevention: Automated data transfer of 10 - 80GB /month between provider and sales team by building pipeline to stream leads through 4 separate enrichment and cloud caching algorithms', 
+      'Learnt a lot of SQL'
     ]
   }, 
   {
