@@ -54,6 +54,14 @@ function Experience() {
     description:[
       'Optimized lead generation and churn prevention: Automated data transfer of 10 - 80GB /month between provider and sales team by building pipeline to stream leads through 4 separate enrichment and cloud caching algorithms'
     ]
+  }, 
+  {
+    title:'Mover', company:'Going Moving Company', period:'Apr 2021 - May 2022', location:'Blacksburg, VA', type:'Part-time',
+    description:[
+      'Responsible for building in-house CRM to optimize worker efficiency and transparency. Utilized Google APIs to automate scheduling and resolve inventory/schedule conflicts',
+      'Developed strategies to increase sales and reach. Oversaw smooth operations of small and large scale jobs around Virginia. Team leader for 10+ multi-day assignments', 
+      'Moved boxes and lots of heavy stuff'
+    ]
   }
 ]
 
