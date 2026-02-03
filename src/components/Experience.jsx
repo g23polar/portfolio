@@ -18,7 +18,7 @@ function Experience() {
       'Building a one stop shop for musician-venue collaboration',
       'Sign up for local performances',
       'Track your earnings, event history, gross revenue, ticket sales and more.',  
-      'Check it out at: https://gigconnecter-frontend.onrender.com/'
+      <>Check it out at: <a href="https://gigconnecter-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity">gigconnecter-frontend.onrender.com</a></>
     ]
   },
     
