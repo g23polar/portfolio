@@ -9,7 +9,7 @@ function Hero() {
 
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1Tt7JPEPJqH-hf7bm8D97wBqdrgo3gqlZ/view?usp=sharing",
+      "https://drive.google.com/file/d/1wgNLJU6U9Sm-ho0vRTlZE68uCSZNP5-J/view?usp=sharing",
       "_blank",
       "noopener,noreferrer"
     );
