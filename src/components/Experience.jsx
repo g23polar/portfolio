@@ -43,6 +43,17 @@ function Experience() {
     description:[
       'Built a back-end PowerShell library to automate forensic reporting and aid endpoint clients to perform 27 administrative and security tasks including running YARA scans, manipulating file systems, and performing WMI queries.', 
       'Enabled remote endpoints to store system reports, logs, and more to AWS (S3 and Glacier).']
+  }, 
+  {
+    title:'Data Science Intern', company:'MSwipe Technologies', period:'Dec 2019 - Jan 2020', location:'Mumbai, India', type:'Intern',
+    description:[
+      'Built facial detection software from OpenCV and TensorFlow libraries to automate merchant verification process. Optimization led to saving 6-8 hours of work per week']
+  }, 
+  {
+    title:'Analytics Engineering Intern', company:'8x8, inc.', period:'May 2019 - Aug 2019', location:'San Jose, CA', type:'Intern',
+    description:[
+      'Optimized lead generation and churn prevention: Automated data transfer of 10 - 80GB /month between provider and sales team by building pipeline to stream leads through 4 separate enrichment and cloud caching algorithms'
+    ]
   }
 ]
 
