@@ -8,6 +8,7 @@ import Experience from './components/Experience.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Skills from './components/Skills.jsx';
 import Contact from './components/Contact.jsx';
+import Library from './components/Library.jsx';
 import SnakeGame from './components/SnakeGame.jsx';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -176,6 +177,7 @@ function App() {
         <Projects />
         <Skills />
         <Contact />
+        <Library />
         {showSnake && <SnakeGame onClose={() => setShowSnake(false)} theme={theme} />}
       </ThemeContext.Provider>
     </div>

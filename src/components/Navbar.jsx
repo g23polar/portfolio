@@ -23,7 +23,7 @@ function Navbar({ onEasterEgg }) {
     }
   }, [onEasterEgg]);
 
-  const navItems = ['Home', 'About Me','Experience','Projects', 'Skills', 'Contact'];
+  const navItems = ['Home', 'About Me','Experience','Projects', 'Skills', 'Contact', 'Library'];
 
   useEffect(() => {
     const handleScroll = () => {
