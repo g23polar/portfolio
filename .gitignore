@@ -39,4 +39,3 @@ next-env.d.ts
 
 # project-specific
 .claude/
-src/assets/
