@@ -2,14 +2,17 @@ import { motion } from 'motion/react';
 import { useContext } from 'react';
 import { ThemeContext } from '../App';
 import { ExternalLink } from 'lucide-react';
+import { article } from 'motion/react-client';
 
 function Library() {
     const { theme } = useContext(ThemeContext);
 
     // Add your items here
     const items = [
-        { title: "Deep Dive: Memory + AI", url: "https://www.betaworks.com/writing/deep-dive-memory-ai", type: "article" },
-        // { title: "Example PDF", url: "https://drive.google.com/...", type: "pdf" },
+        { title: "Deep Dive: Memory + AI", url: "https://www.betaworks.com/writing/deep-dive-memory-ai", type: "article" }
+        , {title:"My Claude Code Workflow for Building Features" ,url:"https://willness.dev/blog/claude-code-workflow", type:"article"}
+        // , {title:"" ,url:"", type:"article"}
+        // ,{ title: "", url: "", type: "pdf" }
     ];
 
     const containerVariants = {
