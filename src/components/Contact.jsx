@@ -35,7 +35,7 @@ function Contact() {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.name.trim()) newErrors.name = 'Name is required';
+    if (!formData.name.trim()) newErrors.name = 'Name is required!';
     if (!formData.email.trim()) newErrors.email = 'Email is required';
     else if (!isValidEmail(formData.email)) newErrors.email = 'Invalid email format';
     if (!formData.message.trim()) newErrors.message = 'Message is required';
