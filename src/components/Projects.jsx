@@ -34,35 +34,7 @@ function Projects() {
             tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES'] ,
             link:'https://github.com/g23polar/cron', 
             github:'https://github.com/g23polar/cron'
-        },
-        {
-            title:'Digest CRON',
-            description:'Setup a few Lambdas and EventBridge rules in a CloudFormation to text and email me stuff I need for the day/week/month', 
-            tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES'] ,
-            link:'https://github.com/g23polar/cron', 
-            github:'https://github.com/g23polar/cron'
-        } ,
-        {
-            title:'Digest CRON',
-            description:'Setup a few Lambdas and EventBridge rules in a CloudFormation to text and email me stuff I need for the day/week/month', 
-            tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES'] ,
-            link:'https://github.com/g23polar/cron', 
-            github:'https://github.com/g23polar/cron'
-        } ,
-        {
-            title:'Digest CRON',
-            description:'Setup a few Lambdas and EventBridge rules in a CloudFormation to text and email me stuff I need for the day/week/month', 
-            tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES'] ,
-            link:'https://github.com/g23polar/cron', 
-            github:'https://github.com/g23polar/cron'
-        } ,
-        {
-            title:'Digest CRON',
-            description:'Setup a few Lambdas and EventBridge rules in a CloudFormation to text and email me stuff I need for the day/week/month', 
-            tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES'] ,
-            link:'https://github.com/g23polar/cron', 
-            github:'https://github.com/g23polar/cron'
-        }  
+        } 
         // ,{
         //     title:'',
         //     description:'', 
