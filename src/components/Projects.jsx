@@ -11,7 +11,7 @@ function Projects() {
             title: 'Council of Engineers',
             description: 'Built a CLI-based agent driven orchestration platform with the ability to spawn agents with defined roles with specific responsibilities to simulate a standard AGILE scrum team',
             tags: ['Python', 'TMUX', 'Claude'],
-            link: 'https://github.com/g23polar/council',  
+            // link: 'https://github.com/g23polar/council',  
             github: 'https://github.com/g23polar/council' 
         },
         {
@@ -25,14 +25,14 @@ function Projects() {
             title: 'Snake Game',
             description: 'There is a hidden snake game on this website, go find it.',
             tags: ['hehehe'],
-            link: 'https://g23.dev/', 
-            github: 'https://github.com/g23polar/portfolio'
+            // link: 'https://g23.dev/', 
+            // github: 'https://github.com/g23polar/portfolio'
         },
         {
             title:'Digest CRON',
             description:'Setup a few Lambdas and EventBridge rules in a CloudFormation to text and email me stuff I need for the day/week/month', 
             tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES'] ,
-            link:'https://github.com/g23polar/cron', 
+            // link:'https://github.com/g23polar/cron', 
             github:'https://github.com/g23polar/cron'
         } 
         // ,{
