@@ -2,17 +2,22 @@ import { motion } from 'motion/react';
 import { useContext } from 'react';
 import { ThemeContext } from '../App';
 import { ExternalLink } from 'lucide-react';
-import { article } from 'motion/react-client';
 
 function Library() {
     const { theme } = useContext(ThemeContext);
 
-    // Add your items here
-    const items = [
-        { title: "Deep Dive: Memory + AI", url: "https://www.betaworks.com/writing/deep-dive-memory-ai", type: "article" }
-        , {title:"My Claude Code Workflow for Building Features" ,url:"https://willness.dev/blog/claude-code-workflow", type:"article"}
-        // , {title:"" ,url:"", type:"article"}
-        // ,{ title: "", url: "", type: "pdf" }
+    // Things I've written
+    const writings = [
+        { title: "Counter-argument to Hume’s skepticism of necessitarian views of causality", url: "https://medium.com/@gautamnair023/counter-argument-to-humes-skepticism-of-necessitarian-views-of-causality-af652a5defd6" }
+        , {title:"Thinking transhumanist", url:"https://medium.com/@gautamnair023/thinking-transhumanist-e13dc68fafbf"}
+        
+    ];
+
+    // Things I've read
+    const readings = [
+        { title: "Deep Dive: Memory + AI", url: "https://www.betaworks.com/writing/deep-dive-memory-ai" },
+        { title: "My Claude Code Workflow for Building Features", url: "https://willness.dev/blog/claude-code-workflow" },
+        // { title: "", url: "" }
     ];
 
     const containerVariants = {
@@ -107,17 +112,91 @@ function Library() {
                     />
                 </motion.div>
 
-                {items.length === 0 ? (
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        className={`text-center text-lg ${
-                            theme === "dark" ? "text-[#b8f2e6]/60" : "text-[#5e6472]/60"
+                {/* Writings Section */}
+                <div className="mb-12">
+                    <motion.h3
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className={`text-2xl font-semibold mb-6 ${
+                            theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
                         }`}
                     >
-                        Coming soon...
-                    </motion.p>
-                ) : (
+                        Writings
+                    </motion.h3>
+                    {writings.length === 0 ? (
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            className={`text-lg ${
+                                theme === "dark" ? "text-[#b8f2e6]/60" : "text-[#5e6472]/60"
+                            }`}
+                        >
+                            Coming soon...
+                        </motion.p>
+                    ) : (
+                        <motion.div
+                            variants={containerVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, margin: "-100px" }}
+                            className="flex flex-col gap-4"
+                        >
+                            {writings.map((item, i) => (
+                                <motion.a
+                                    key={i}
+                                    href={item.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    variants={itemVariants}
+                                    whileHover={{
+                                        scale: 1.02,
+                                        x: 8,
+                                        transition: {
+                                            type: "spring",
+                                            stiffness: 400,
+                                            damping: 15
+                                        }
+                                    }}
+                                    className="group relative"
+                                >
+                                    <div
+                                        className={`relative p-5 rounded-2xl backdrop-blur-sm border transition-all duration-300 flex items-center justify-between ${
+                                            theme === "dark"
+                                                ? "bg-[#b8f2e6]/10 border-[#b8f2e6]/20 hover:bg-[#b8f2e6]/20 hover:border-[#b8f2e6]/40"
+                                                : "bg-[#aed9e0]/30 border-[#aed9e0]/40 hover:bg-[#aed9e0]/50 hover:border-[#aed9e0]/60"
+                                        }`}
+                                    >
+                                        <span className={`text-lg font-medium ${
+                                            theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
+                                        }`}>
+                                            {item.title}
+                                        </span>
+                                        <ExternalLink className={`w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity ${
+                                            theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
+                                        }`} />
+                                    </div>
+                                </motion.a>
+                            ))}
+                        </motion.div>
+                    )}
+                </div>
+
+                {/* Reading List Section */}
+                <div>
+                    <motion.h3
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className={`text-2xl font-semibold mb-6 ${
+                            theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
+                        }`}
+                    >
+                        Reading List
+                    </motion.h3>
                     <motion.div
                         variants={containerVariants}
                         initial="hidden"
@@ -125,7 +204,7 @@ function Library() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="flex flex-col gap-4"
                     >
-                        {items.map((item, i) => (
+                        {readings.map((item, i) => (
                             <motion.a
                                 key={i}
                                 href={item.url}
@@ -150,22 +229,11 @@ function Library() {
                                             : "bg-[#aed9e0]/30 border-[#aed9e0]/40 hover:bg-[#aed9e0]/50 hover:border-[#aed9e0]/60"
                                     }`}
                                 >
-                                    <div className="flex items-center gap-4">
-                                        {item.type && (
-                                            <span className={`text-xs font-medium px-2 py-1 rounded-lg uppercase tracking-wider ${
-                                                theme === "dark"
-                                                    ? "bg-[#b8f2e6]/20 text-[#b8f2e6]"
-                                                    : "bg-[#aed9e0]/50 text-[#5e6472]"
-                                            }`}>
-                                                {item.type}
-                                            </span>
-                                        )}
-                                        <span className={`text-lg font-medium ${
-                                            theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
-                                        }`}>
-                                            {item.title}
-                                        </span>
-                                    </div>
+                                    <span className={`text-lg font-medium ${
+                                        theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
+                                    }`}>
+                                        {item.title}
+                                    </span>
                                     <ExternalLink className={`w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity ${
                                         theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
                                     }`} />
@@ -173,7 +241,7 @@ function Library() {
                             </motion.a>
                         ))}
                     </motion.div>
-                )}
+                </div>
             </div>
         </section>
     );
