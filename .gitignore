@@ -37,3 +37,4 @@ src/data/portfolio.backup.*.json
 *.tsbuildinfo
 next-env.d.ts
 /.claude
+.claude
