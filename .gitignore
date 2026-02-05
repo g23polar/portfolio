@@ -36,5 +36,7 @@ src/data/portfolio.backup.*.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-/.claude
-.claude
+
+# project-specific
+.claude/
+src/assets/

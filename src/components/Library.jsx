@@ -10,7 +10,7 @@ function Library() {
     const writings = [
         { title: "Counter-argument to Hume’s skepticism of necessitarian views of causality", url: "https://medium.com/@gautamnair023/counter-argument-to-humes-skepticism-of-necessitarian-views-of-causality-af652a5defd6" }
         , {title:"Thinking transhumanist", url:"https://medium.com/@gautamnair023/thinking-transhumanist-e13dc68fafbf"}
-        
+
     ];
 
     // Things I've read
@@ -123,7 +123,7 @@ function Library() {
                             theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
                         }`}
                     >
-                        Writings
+                        My Writings
                     </motion.h3>
                     {writings.length === 0 ? (
                         <motion.p
