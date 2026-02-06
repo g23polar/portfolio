@@ -31,10 +31,17 @@ function Projects() {
         {
             title:'Digest CRON',
             description:'Setup a few Lambdas and EventBridge rules in a CloudFormation to text and email me stuff I need for the day/week/month', 
-            tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES'] ,
+            tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES', 'LLM'] ,
             // link:'https://github.com/g23polar/cron', 
             github:'https://github.com/g23polar/cron'
         } 
+        ,{
+            title:'AI-powered Interior Designer',
+            description:'', 
+            tags:['Next.js', 'Fabric.js', 'React', 'Zustand', 'immer', 'Konva', 'Tailwind + shadcn/ui', 'Claude Sonnet: AI Vision and OCR', 'Claude Haiku: Reasoning, chat and command parsing'] ,
+            // link:'', 
+            github:'https://github.com/g23polar/floor'
+        }
         // ,{
         //     title:'',
         //     description:'', 
