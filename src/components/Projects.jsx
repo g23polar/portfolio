@@ -34,6 +34,11 @@ function Projects() {
             tags:['AWS CloudFormation', 'AWS Lambda', 'AWS SNS/SES', 'LLM'] ,
             // link:'https://github.com/g23polar/cron', 
             github:'https://github.com/g23polar/cron'
+        }
+        , {
+            title:'Monsoon: Biome and Biodiversity Board Game' ,
+            description: 'Designing and prototyping a board game' ,
+            tags:['Design', 'Mechanics', 'Game engine and balancing']
         } 
         ,{
             title:'AI-powered Interior Designer',
