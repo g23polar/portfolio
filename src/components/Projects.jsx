@@ -37,8 +37,9 @@ function Projects() {
         }
         , {
             title:'Monsoon: Biome and Biodiversity Board Game' ,
-            description: 'Designing and prototyping a board game' ,
-            tags:['Design', 'Mechanics', 'Game engine and balancing']
+            description: 'Monsoon is a two-player card game where you build resilient biomes with species and augments to survive recurring environmental crises.' ,
+            tags:['Design', 'Mechanics', 'Game engine and balancing', 'TypeScript', 'React', 'Vite', 'Zustand', 'Socket.IO', 'Node.js', 'Vitest'], 
+            link:'https://monsoon-xoad.onrender.com'
         } 
         ,{
             title:'AI-powered Interior Designer',
