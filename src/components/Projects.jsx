@@ -49,8 +49,8 @@ function Projects() {
             github:'https://github.com/g23polar/floor'
         }
         ,{
-            title:'Constellation: Hidden thematic connections between fragments of thought - text, images',
-            description:'Hackaton project', 
+            title:'Constellation',
+            description:'Hidden thematic connections between fragments of thought - text, images, sounds, demo linked.', 
             tags:['React 18', 'TypeScript', 'Vite + Three.js', 'react-force-graph-3d', 'Anthropic SDK', 'Express server', 'Ralph loops'] ,
             link:'https://youtu.be/eGfVNmKAzM4', 
             github:'https://github.com/g23polar/constellations'
