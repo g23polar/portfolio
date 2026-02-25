@@ -48,13 +48,13 @@ function Projects() {
             // link:'', 
             github:'https://github.com/g23polar/floor'
         }
-        // ,{
-        //     title:'',
-        //     description:'', 
-        //     tags:[''] ,
-        //     link:'', 
-        //     github:''
-        // }
+        ,{
+            title:'Constellation: Hidden thematic connections between fragments of thought - text, images',
+            description:'Hackaton project', 
+            tags:['React 18', 'TypeScript', 'Vite + Three.js', 'react-force-graph-3d', 'Anthropic SDK', 'Express server', 'Ralph loops'] ,
+            link:'https://youtu.be/eGfVNmKAzM4', 
+            github:'https://github.com/g23polar/constellations'
+        }
         // , {
         //     title: 'FloodIQ',
         //     description: 'TODO',
