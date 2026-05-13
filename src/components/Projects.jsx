@@ -54,6 +54,13 @@ function Projects() {
             tags:['React 18', 'TypeScript', 'Vite + Three.js', 'react-force-graph-3d', 'Anthropic SDK', 'Express server', 'Ralph loops'] ,
             link:'https://youtu.be/eGfVNmKAzM4', 
             github:'https://github.com/g23polar/constellations'
+        } 
+        ,{
+            title:'Design Snapshot Version Control',
+            description:'Save and restore any version of your .psd, .psb, .3dm, .pdf, .png, or .jpg — no cloud, no daemon, no 800 MB memory spike.', 
+            tags:['Rust'] ,
+            // link:'https://youtu.be/eGfVNmKAzM4', 
+            github:'https://github.com/g23polar/design-version-client'
         }
         // , {
         //     title: 'FloodIQ',
