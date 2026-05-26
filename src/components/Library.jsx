@@ -8,7 +8,7 @@ function Library() {
 
     // Things I've written
     const writings = [
-        { title: "Little Lights", url: "https://medium.com/p/fbac34d4fce8?postPublishedType=initial" },
+        { title: "Little Lights", url: "https://medium.com/@gautamnair023/little-lights-fbac34d4fce8?sk=9ba2b1d4651f5a9e592329a6c28f89ba" },
         { title: "Counter-argument to Hume’s skepticism of necessitarian views of causality", url: "https://medium.com/@gautamnair023/counter-argument-to-humes-skepticism-of-necessitarian-views-of-causality-af652a5defd6" }
         , {title:"Thinking transhumanist", url:"https://medium.com/@gautamnair023/thinking-transhumanist-e13dc68fafbf"}
 

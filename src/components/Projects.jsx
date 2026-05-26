@@ -15,6 +15,27 @@ function Projects() {
             github: 'https://github.com/g23polar/council' 
         },
         {
+            title: 'PricePilot',
+            description: 'Paid shopping tool for AI agents: answering a simple question: where should I buy this exact product right now?',
+            tags: ['Nimble', 'Hermes', 'Daytona', 'Senso.ai', 'ClickHouse', 'Agent Orchestration'] ,
+            link: 'https://pricepilot-sepia.vercel.app/', 
+            github: 'https://github.com/mmurrs/pricepilot'
+        }, 
+        {
+            title:'Constellation',
+            description:'Hidden thematic connections between fragments of thought - text, images, sounds, demo linked.', 
+            tags:['React 18', 'TypeScript', 'Vite + Three.js', 'react-force-graph-3d', 'Anthropic SDK', 'Express server', 'Ralph loops'] ,
+            link:'https://youtu.be/eGfVNmKAzM4', 
+            github:'https://github.com/g23polar/constellations'
+        } 
+        ,{
+            title:'Design Snapshot Version Control',
+            description:'Save and restore any version of your .psd, .psb, .3dm, .pdf, .png, or .jpg — no cloud, no daemon, no 800 MB memory spike.', 
+            tags:['Rust'] ,
+            // link:'https://youtu.be/eGfVNmKAzM4', 
+            github:'https://github.com/g23polar/design-version-client'
+        },
+        {
             title: 'Gig Connector',
             description: 'Currently building: Platform for local musicians and venues to find each other',
             tags: ['FastAPI', 'SQLAlchemy/Alembic', 'Vercel', 'Render', 'Supabase'],
@@ -48,20 +69,7 @@ function Projects() {
             // link:'', 
             github:'https://github.com/g23polar/floor'
         }
-        ,{
-            title:'Constellation',
-            description:'Hidden thematic connections between fragments of thought - text, images, sounds, demo linked.', 
-            tags:['React 18', 'TypeScript', 'Vite + Three.js', 'react-force-graph-3d', 'Anthropic SDK', 'Express server', 'Ralph loops'] ,
-            link:'https://youtu.be/eGfVNmKAzM4', 
-            github:'https://github.com/g23polar/constellations'
-        } 
-        ,{
-            title:'Design Snapshot Version Control',
-            description:'Save and restore any version of your .psd, .psb, .3dm, .pdf, .png, or .jpg — no cloud, no daemon, no 800 MB memory spike.', 
-            tags:['Rust'] ,
-            // link:'https://youtu.be/eGfVNmKAzM4', 
-            github:'https://github.com/g23polar/design-version-client'
-        }
+        ,
         // , {
         //     title: 'FloodIQ',
         //     description: 'TODO',
