@@ -8,6 +8,7 @@ function Library() {
 
     // Things I've written
     const writings = [
+        { title: "Little Lights", url: "https://medium.com/p/fbac34d4fce8?postPublishedType=initial" },
         { title: "Counter-argument to Hume’s skepticism of necessitarian views of causality", url: "https://medium.com/@gautamnair023/counter-argument-to-humes-skepticism-of-necessitarian-views-of-causality-af652a5defd6" }
         , {title:"Thinking transhumanist", url:"https://medium.com/@gautamnair023/thinking-transhumanist-e13dc68fafbf"}
 
@@ -17,6 +18,9 @@ function Library() {
     const readings = [
         { title: "Deep Dive: Memory + AI", url: "https://www.betaworks.com/writing/deep-dive-memory-ai" },
         { title: "My Claude Code Workflow for Building Features", url: "https://willness.dev/blog/claude-code-workflow" },
+        { title: "KNN Demystified: Distance Metrics and Choosing K", url: "https://pub.towardsai.net/knn-distance-metrics-choosing-k-modern-ai-explained-4d3a1edb52f7" },
+        { title: "The Forgotten Conversation Problem in AI Chat", url: "https://medium.com/user-experience-design-1/the-forgotten-conversation-problem-in-ai-chat-4d3d0c3ea525" },
+        { title: "Documenting the Architecture of a Mid-Size Chaos", url: "https://blog.gopenai.com/documenting-architecture-of-a-mid-size-chaos-f75695f04990" },
         // { title: "", url: "" }
     ];
 
