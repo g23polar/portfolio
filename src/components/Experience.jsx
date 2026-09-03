@@ -7,7 +7,20 @@ function Experience() {
   const { theme } = useContext(ThemeContext);
 
   const experiences = [
-     
+  {
+    title: 'Founding Solutions Engineer',
+    company: 'Omnea',
+    period: 'Jun 2026 - Present',
+    location: 'London / NYC',
+    type: 'Contract',
+    description: [
+      'Prototyped and launched lightweight RAG system to assist in knowledge base queries. Hooked it up to codebase and external context engineering tools to refine log-based agent discovery with code context', 
+'Ran support desk for enterprise and growth stage customers, closing 480+ tickets in 6 weeks.', 
+'Delivered quick turnaround on bugs and smaller feature requests directly, cutting time horizons by 3-8 weeks per request', 
+'Reduced ticket volume to engineering teams by 94%'
+
+    ]
+  },
   {
     title:'Founder ?, part-time PM, definitely Software Engineer', 
     company:'Gig Connector',
