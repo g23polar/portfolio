@@ -24,7 +24,7 @@ function Experience() {
   {
     title:'Founder ?, part-time PM, definitely Software Engineer', 
     company:'Gig Connector',
-    period:'Present', 
+    period:'Jan 2026 - Apr 2026', 
     location:'New York City, NY' ,
     type:'Full-time + rest of my day', 
     description:[
