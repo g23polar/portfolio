@@ -8,17 +8,28 @@ function Experience() {
 
   const experiences = [
   {
-    title: 'Founding Solutions Engineer',
+    title: 'Creator & Maintainer',
+    company: 'factory',
+    period: 'Sep 2026 - Present',
+    location: 'Remote',
+    type: 'Open-Source Multi-Agent Coding System',
+    description: [
+      'Extended an open-source (GPL) pipeline into an agentic coding system on Claude Code: 8 specialized LLM agents take a GitHub issue through intake, spec-driven implementation, multi-lens AI code review, and approval, each in an isolated context (its own session and git worktree).',
+      'Designed guardrails for autonomous agents: deterministic orchestration and a script-enforced merge policy keep control decisions out of the model, a least-privilege tool allowlist contains prompt-injection risk from untrusted issue text, and risky changes escalate to a human in the loop.',
+      'Built risk-based model routing across Claude Opus, Sonnet, and Haiku and compressed agent shell output through rtk (76% fewer tool-output tokens); review agents return structured verdicts that drive automatic rework loops. Dogfooded: it ships its own features through the pipeline, backed by 63 policy tests.',
+      'Stack: Python, Claude Code, Orca, GitHub CLI, Bash.'
+    ]
+  },
+  {
+    title: 'Founding Solutions Engineer, Applied AI',
     company: 'Omnea',
-    period: 'Jun 2026 - Present',
-    location: 'London / NYC',
+    period: 'Jun 2026 - Aug 2026',
+    location: 'London, UK',
     type: 'Contract',
     description: [
-      'Prototyped and launched lightweight RAG system to assist in knowledge base queries. Hooked it up to codebase and external context engineering tools to refine log-based agent discovery with code context', 
-'Ran support desk for enterprise and growth stage customers, closing 480+ tickets in 6 weeks.', 
-'Delivered quick turnaround on bugs and smaller feature requests directly, cutting time horizons by 3-8 weeks per request', 
-'Reduced ticket volume to engineering teams by 94%'
-
+      'Ran the support desk for enterprise and growth-stage customers, closing 480+ tickets in 6 weeks and cutting ticket volume escalated to engineering by 94%.',
+      'Shipped 2–5 bug fixes and small feature requests per day directly, delivering customer asks 3–8 weeks sooner than the standard engineering queue.',
+      'Prototyped and launched a lightweight RAG system for knowledge-base queries, connected to the codebase and context-engineering tools so agents could trace issues from logs to the relevant code.'
     ]
   },
   {
@@ -35,26 +46,27 @@ function Experience() {
   },
     
   {
-    title: 'Software Engineer',
+    title: 'Software Engineer, High Grade Credit Trading',
     company: 'MarketAxess',
     period: 'Sep 2022 - Nov 2025',
     location: 'New York City, NY',
     type: 'Full-time',
     description: [
-      'Led implementation of new FINRA regulatory requirements on post trade messages communicated over FIX protocols (API) for U.S. dealers making large Portfolio trades, saving companies large amounts ($1M + per intrusion) on fines.', 
-'Led implementation to allow liquidity takers to perform amendments on agreed spread while maintaining delayed spot.',
-'Built 16 full-stack and API features, stretching across tech stacks - specialized in FIX for 18 months', 
-'Part of agile scrum team focused on developing and maintaining hedging services to enable companies to hedge corporate risk by leveraging liquidity provided by Liquidity Edge and Goldman Sachs and perform larger blocks trades.' ,
-'Provided real time production support for trading desks. Responsibilities included identifying bugs across platform and servers, recommending fixes, and communicating with upper management.', 
-'Ran point for a total of 8 major environment releases/disaster recovery scenarios.', 
-'Worked closely with industry experts and product/project managers to build and maintain CI/CD pipelines.',
-'Participated in mentorship program to guide 2 interns navigate complex projects and complete assignments.'],
+      'Shipped standardized API validation and automated message handling for a regulated, high-volume traffic stream, eliminating $1M+ per-incident compliance exposure for enterprise clients.',
+      'Owned production reliability for a high-throughput trading platform; cut MTTR 35% and customer-impacting incidents 50% by isolating JVM and cross-platform bugs and driving fixes through engineering leadership.',
+      'Shipped 16 full-stack and API features across multiple stacks, including 18 months as owner of a real-time wire-protocol subsystem.',
+      'Built a stateful-update API that lets clients amend in-flight transactions concurrently across trading protocols.',
+      'Led 8 major releases and disaster-recovery exercises end to end, owning rollout, rollback, and on-call recovery.',
+      'Built health-check and maintenance tooling for 2 global API gateways serving 350+ internal operators.',
+      'Mentored 2 engineering interns through scoping, technical design, and delivery of full-stack projects.'
+    ],
   }, 
   {
-    title:'Software Engineer', company:'Sentinel One', period:'Jun 2020 - Jan 2021', location:'Remote', type:'Intern/Contract',
+    title:'Back-end Software Engineer', company:'SentinelOne', period:'Jun 2020 - Jan 2021', location:'Remote', type:'Intern/Contract',
     description:[
-      'Built a back-end PowerShell library to automate forensic reporting and aid endpoint clients to perform 27 administrative and security tasks including running YARA scans, manipulating file systems, and performing WMI queries.', 
-      'Enabled remote endpoints to store system reports, logs, and more to AWS (S3 and Glacier).']
+      'Built a PowerShell SDK and CLI that gave endpoint clients one scriptable interface to 27 administrative and security operations, including YARA scans, file-system operations, and WMI queries.',
+      'Built forensic reporting on top of the SDK, letting remote endpoints ship system reports and logs to AWS S3 and Glacier.'
+    ]
   }, 
   {
     title:'Data Science Intern', company:'MSwipe Technologies', period:'Dec 2019 - Jan 2020', location:'Mumbai, India', type:'Intern',
@@ -62,10 +74,9 @@ function Experience() {
       'Built facial detection software from OpenCV and TensorFlow libraries to automate merchant verification process. Optimization led to saving 6-8 hours of work per week']
   }, 
   {
-    title:'Analytics Engineering Intern', company:'8x8, inc.', period:'May 2019 - Aug 2019', location:'San Jose, CA', type:'Intern',
+    title:'Analytics Intern', company:'8x8', period:'May 2019 - Jul 2019', location:'San Jose, CA', type:'Intern',
     description:[
-      'Optimized lead generation and churn prevention: Automated data transfer of 10 - 80GB /month between provider and sales team by building pipeline to stream leads through 4 separate enrichment and cloud caching algorithms', 
-      'Learnt a lot of SQL'
+      'Built a pipeline that moved 10–80 GB/month of lead data from provider to sales through 4 enrichment and caching stages, automating a manual transfer for lead generation and churn prevention.'
     ]
   }, 
   {
