@@ -8,23 +8,28 @@ function Projects() {
     
     const projects = [
         {
-            title: 'Council of Engineers',
-            description: 'Built a CLI-based agent driven orchestration platform with the ability to spawn agents with defined roles with specific responsibilities to simulate a standard AGILE scrum team',
-            tags: ['Python', 'TMUX', 'Claude'],
-            // link: 'https://github.com/g23polar/council',  
-            github: 'https://github.com/g23polar/council' 
+            title: 'Agent Harness & Council of Engineers',
+            description: 'CLI orchestration system that runs specialized AI agents as an Agile scrum team with automated handoffs, cutting 0-to-1 build cycles by roughly 80%. Includes pi-project-memory, a package that gives agent sessions persistent memory so a fresh agent picks up where the last one left off.',
+            tags: ['Python', 'TMUX', 'Claude', 'Claude Code', 'pi'],
+            github: 'https://github.com/g23polar/council'
+        },
+        {
+            title: 'RFQ-to-Quote Agent',
+            description: 'Agent that turns RFQs from email, PDF, and spreadsheets into a draft quote in about a minute, with a human approving before anything is sent. Every extracted value is grounded in its source, and two models from different labs cross-check each line. Built at Get Hired Hack.',
+            tags: ['Python', 'FastAPI', 'Pydantic', 'uv'],
+            github: 'https://github.com/g23polar/rfq'
         },
         {
             title: 'PricePilot',
-            description: 'Paid shopping tool for AI agents: answering a simple question: where should I buy this exact product right now?',
-            tags: ['Nimble', 'Hermes', 'Daytona', 'Senso.ai', 'ClickHouse', 'Agent Orchestration'] ,
+            description: 'Paid price-comparison API for AI shopping agents that searches Amazon and Walmart in parallel and returns the cheapest verified, in-stock, variant-exact offer, with a custom eval harness checking price correctness. x402 agent payments plus OpenAPI, skill.md, and llms.txt discovery let external agents find and pay ($0.05/call) for the API on their own.',
+            tags: ['Python', 'Nimble', 'ClickHouse', 'Vercel', 'x402', 'Hermes', 'Daytona', 'Senso.ai', 'Agent Orchestration'] ,
             link: 'https://pricepilot-sepia.vercel.app/', 
             github: 'https://github.com/mmurrs/pricepilot'
         }, 
         {
             title:'Constellation',
-            description:'Hidden thematic connections between fragments of thought - text, images, sounds, demo linked.', 
-            tags:['React 18', 'TypeScript', 'Vite + Three.js', 'react-force-graph-3d', 'Anthropic SDK', 'Express server', 'Ralph loops'] ,
+            description:'Multi-agent system that finds thematic connections across text, image, and video sources by combining embedding similarity in pgvector, Claude-based judging, and a knowledge graph of extracted themes.',
+            tags:['Python', 'TypeScript', 'React 18', 'Claude API', 'pgvector', 'Vite + Three.js', 'react-force-graph-3d', 'Express server', 'Ralph loops'] ,
             link:'https://youtu.be/eGfVNmKAzM4', 
             github:'https://github.com/g23polar/constellations'
         } 

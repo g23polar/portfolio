@@ -27,9 +27,9 @@ function Experience() {
     location: 'London, UK',
     type: 'Contract',
     description: [
-      'Ran the support desk for enterprise and growth-stage customers, closing 480+ tickets in 6 weeks and cutting ticket volume escalated to engineering by 94%.',
-      'Shipped 2–5 bug fixes and small feature requests per day directly, delivering customer asks 3–8 weeks sooner than the standard engineering queue.',
-      'Prototyped and launched a lightweight RAG system for knowledge-base queries, connected to the codebase and context-engineering tools so agents could trace issues from logs to the relevant code.'
+      'Launched a RAG system (Claude, Chroma) over the codebase and knowledge base that traces logs to the relevant code in under 60s with documented reasoning; eval-validated and used by a 4-person team on every ticket.',
+      'Integrated 15+ customers across 11 enterprise systems, including NetSuite, Dynamics, Okta, Azure, and Jira.',
+      'Closed 480+ support tickets in 6 weeks, cutting ticket volume escalated to engineering by 94%, and shipped 2–5 fixes per day directly, 3–8 weeks sooner than the standard engineering queue.'
     ]
   },
   {
@@ -53,9 +53,8 @@ function Experience() {
     type: 'Full-time',
     description: [
       'Shipped standardized API validation and automated message handling for a regulated, high-volume traffic stream, eliminating $1M+ per-incident compliance exposure for enterprise clients.',
-      'Owned production reliability for a high-throughput trading platform; cut MTTR 35% and customer-impacting incidents 50% by isolating JVM and cross-platform bugs and driving fixes through engineering leadership.',
-      'Shipped 16 full-stack and API features across multiple stacks, including 18 months as owner of a real-time wire-protocol subsystem.',
-      'Built a stateful-update API that lets clients amend in-flight transactions concurrently across trading protocols.',
+      'Owned production reliability for a trading platform; cut MTTR 35% and customer-impacting incidents 50% by isolating JVM and cross-platform bugs.',
+      'Shipped 16 full-stack and API features, including a stateful-update API that lets clients amend in-flight transactions concurrently across trading protocols.',
       'Led 8 major releases and disaster-recovery exercises end to end, owning rollout, rollback, and on-call recovery.',
       'Built health-check and maintenance tooling for 2 global API gateways serving 350+ internal operators.',
       'Mentored 2 engineering interns through scoping, technical design, and delivery of full-stack projects.'

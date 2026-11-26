@@ -5,12 +5,18 @@ import { ThemeContext } from '../App';
 function Skills() {
     const {theme} = useContext(ThemeContext);
     const skills = [
-        'Java', 'Python', 'C', 'Assembly', 'SQL', 'PowerShell',
-        'Spring Boot', 'PyTorch', 'HuggingFace',
-        'AWS', 'Google Cloud Platform', 'MongoDB', 'Kafka', 'Docker',
-        'Vercel', 'Render', 'Jenkins',
-        'Algorithms', 'Trading Systems', 'API Architecture', 'CLI Apps',
-        'Claude CLI', 'Codex',
+        // AI / LLM
+        'Claude Code', 'Claude Agent SDK', 'MCP', 'Anthropic / OpenAI / Gemini APIs',
+        'LangChain / LangGraph', 'LlamaIndex', 'RAG', 'Vector DBs (pgvector, Chroma)', 'Eval Harnesses', 'PyTorch',
+        // Agentic systems
+        'Multi-agent Orchestration', 'LLM Model Routing', 'Guardrails & Human-in-the-loop', 'Prompt-injection Defense',
+        // Languages
+        'Python', 'TypeScript', 'Java', 'SQL', 'Rust',
+        // Technologies
+        'FastAPI', 'React', 'Node.js', 'Spring Boot', 'Kafka', 'Docker',
+        'AWS', 'GCP', 'Azure', 'Postgres', 'MongoDB', 'Vercel',
+        // Domains
+        'Trading Systems', 'API Architecture',
     ];
 
     const containerVariants = {
